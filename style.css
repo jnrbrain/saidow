@@ -1,30 +1,25 @@
 /* ==========================================
-   SAIDOW.COM - AWSMCOLOR (REF2) PALETTE
-   Dynamic Black, Honey Beige, Egg Liqueur, Apocalyptic Orange
+   SAIDOW.COM - REF3 THEME (OATMILK LATTE & ATOMIC ORANGE)
    ========================================== */
 
 :root {
-  /* Brand Color Tokens (Ref2 Palette) */
-  --color-dynamic-black: #161415;  /* Dynamic Black #161415 */
-  --color-apocalyptic-orange: #F05323; /* Apocalyptic Orange */
-  --color-honey-beige: #F5E5C9;    /* Honey Beige */
-  --color-egg-liqueur: #DFD0B5;    /* Egg Liqueur */
-
-  --color-card-bg: #1f1d1e;        /* Subtle Card Contrast */
-  --color-card-hover: #2a2729;     /* Card Hover */
-
-  --border-color: rgba(245, 229, 201, 0.12);
-  --border-orange: rgba(240, 83, 35, 0.45);
+  /* Brand Color Tokens (Ref3 Palette) */
+  --color-oatmilk-bg: #EAE5D9;       /* Oatmilk Latte Warm Sand Background */
+  --color-oatmilk-card: #F4F0E6;     /* Card Background */
+  --color-oatmilk-card-hover: #FFFFFF;/* Card Hover Background */
+  --color-atomic-orange: #E9631A;    /* Atomic Orange Accent */
   
-  --text-primary: var(--color-honey-beige);
-  --text-secondary: var(--color-egg-liqueur);
-  --text-muted: rgba(223, 208, 181, 0.5);
-  
-  --font-heading: 'Plus Jakarta Sans', 'Syne', sans-serif;
+  --color-text-main: #1D1C1A;        /* Dark Charcoal Main Text */
+  --color-text-sub: #5E5950;         /* Subtitle / Muted Text */
+
+  --border-color: #DCD6C8;
+  --border-orange: #E9631A;
+
+  --font-condensed: 'Barlow Condensed', sans-serif;
   --font-main: 'Plus Jakarta Sans', sans-serif;
   --font-mono: 'Space Grotesk', monospace;
   
-  --radius-lg: 18px;
+  --radius-lg: 20px;
   --radius-md: 12px;
   --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -38,8 +33,8 @@
 html {
   scroll-behavior: smooth;
   font-family: var(--font-main);
-  background-color: var(--color-dynamic-black);
-  color: var(--text-primary);
+  background-color: var(--color-oatmilk-bg);
+  color: var(--color-text-main);
 }
 
 body {
@@ -48,19 +43,19 @@ body {
   position: relative;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--color-dynamic-black);
+  background-color: var(--color-oatmilk-bg);
 }
 
-/* Subtle Grid Background */
+/* Grid Pattern (Subtle Warm Lines) */
 .bg-grid {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to right, rgba(245, 229, 201, 0.018) 1px, transparent 1px),
-                    linear-gradient(to bottom, rgba(245, 229, 201, 0.018) 1px, transparent 1px);
-  background-size: 80px 80px;
+  background-image: linear-gradient(to right, rgba(233, 99, 26, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(233, 99, 26, 0.03) 1px, transparent 1px);
+  background-size: 75px 75px;
   z-index: -1;
   pointer-events: none;
 }
@@ -77,7 +72,7 @@ body {
   align-items: center;
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  background: rgba(22, 20, 21, 0.88);
+  background: rgba(234, 229, 217, 0.88);
   border-bottom: 1px solid var(--border-color);
   z-index: 100;
 }
@@ -90,22 +85,22 @@ body {
 }
 
 .brand-name {
-  font-family: var(--font-heading);
-  font-size: 1.4rem;
+  font-family: var(--font-condensed);
+  font-size: 1.8rem;
   font-weight: 800;
   letter-spacing: 2px;
-  color: var(--color-honey-beige);
+  color: var(--color-text-main);
 }
 
 .brand-badge {
   font-size: 0.65rem;
   font-family: var(--font-mono);
-  background: var(--color-apocalyptic-orange);
-  color: var(--color-dynamic-black);
+  background: var(--color-atomic-orange);
+  color: #FFFFFF;
   font-weight: 700;
-  padding: 3px 8px;
-  border-radius: 4px;
-  letter-spacing: 1.5px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 1px;
 }
 
 .nav-links {
@@ -115,29 +110,29 @@ body {
 }
 
 .nav-link {
-  color: var(--text-secondary);
+  color: var(--color-text-sub);
   text-decoration: none;
-  font-weight: 500;
-  font-size: 0.92rem;
+  font-weight: 600;
+  font-size: 0.95rem;
   letter-spacing: 0.3px;
   transition: var(--transition-smooth);
 }
 
 .nav-link:hover, .nav-link.active {
-  color: var(--color-apocalyptic-orange);
+  color: var(--color-atomic-orange);
 }
 
 .btn-contact {
-  border: 1px solid var(--color-apocalyptic-orange);
-  color: var(--color-apocalyptic-orange);
-  padding: 7px 18px;
-  border-radius: 8px;
-  font-weight: 600;
+  border: 1.5px solid var(--color-atomic-orange);
+  color: var(--color-atomic-orange);
+  padding: 7px 20px;
+  border-radius: 30px;
+  font-weight: 700;
 }
 
 .btn-contact:hover {
-  background: var(--color-apocalyptic-orange);
-  color: var(--color-dynamic-black);
+  background: var(--color-atomic-orange);
+  color: #FFFFFF;
 }
 
 /* Hero Section */
@@ -157,23 +152,24 @@ body {
 }
 
 .hero-title {
-  font-family: var(--font-heading);
-  font-size: clamp(2.8rem, 5.5vw, 4.2rem);
+  font-family: var(--font-condensed);
+  font-size: clamp(3.2rem, 6.5vw, 5rem);
   font-weight: 800;
-  letter-spacing: -1.5px;
-  margin-bottom: 18px;
-  color: var(--color-honey-beige);
-  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  color: var(--color-text-main);
+  line-height: 1.05;
 }
 
 .hero-subtitle {
   font-size: 1.15rem;
-  color: var(--text-secondary);
-  font-weight: 400;
+  color: var(--color-text-sub);
+  font-weight: 500;
   line-height: 1.6;
 }
 
-/* Triple Hub Container */
+/* Triple Hub Container (Ref3 Notched Cards) */
 .hub-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -183,44 +179,108 @@ body {
 .hub-card {
   position: relative;
   border-radius: var(--radius-lg);
-  background: var(--color-card-bg);
-  border: 1px solid var(--border-color);
+  background: var(--color-oatmilk-card);
+  border: 1.5px solid var(--border-color);
   padding: 38px 32px;
   text-decoration: none;
   transition: var(--transition-smooth);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 370px;
+  min-height: 380px;
+}
+
+/* Ref3 Notched Badge in top right corner */
+.hub-card::after {
+  content: "↗";
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 1.5px solid var(--border-color);
+  background: var(--color-oatmilk-bg);
+  color: var(--color-atomic-orange);
+  font-size: 1.2rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-smooth);
 }
 
 .hub-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--color-apocalyptic-orange);
-  background: var(--color-card-hover);
-  box-shadow: 0 16px 32px -10px rgba(240, 83, 35, 0.2);
+  transform: translateY(-6px);
+  border-color: var(--color-atomic-orange);
+  background: var(--color-oatmilk-card-hover);
+  box-shadow: 0 16px 36px -10px rgba(233, 99, 26, 0.18);
+}
+
+.hub-card:hover::after {
+  background: var(--color-atomic-orange);
+  border-color: var(--color-atomic-orange);
+  color: #FFFFFF;
+  transform: translate(2px, -2px);
+}
+
+/* Ref3 High-Contrast Second Card Highlight */
+.hub-card:nth-child(2) {
+  background: var(--color-atomic-orange);
+  border-color: var(--color-atomic-orange);
+}
+
+.hub-card:nth-child(2) .card-badge {
+  color: #FFFFFF;
+  opacity: 0.9;
+}
+
+.hub-card:nth-child(2) .card-title {
+  color: #FFFFFF;
+}
+
+.hub-card:nth-child(2) .card-desc {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hub-card:nth-child(2) .card-tags li {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.hub-card:nth-child(2) .card-cta {
+  color: #FFFFFF;
+}
+
+.hub-card:nth-child(2)::after {
+  background: #FFFFFF;
+  color: var(--color-atomic-orange);
+  border-color: #FFFFFF;
 }
 
 .card-badge {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   letter-spacing: 2px;
-  color: var(--color-apocalyptic-orange);
+  color: var(--color-atomic-orange);
   font-weight: 700;
   margin-bottom: 16px;
 }
 
 .card-title {
-  font-family: var(--font-heading);
-  font-size: 2.4rem;
+  font-family: var(--font-condensed);
+  font-size: 2.8rem;
   font-weight: 800;
-  letter-spacing: -1px;
-  color: var(--color-honey-beige);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-text-main);
   margin-bottom: 12px;
+  line-height: 1;
 }
 
 .card-desc {
-  color: var(--text-secondary);
+  color: var(--color-text-sub);
   font-size: 0.95rem;
   font-weight: 400;
   margin-bottom: 25px;
@@ -230,36 +290,33 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 8px;
   margin-bottom: 25px;
 }
 
+/* Ref3 Pill Badge Style */
 .card-tags li {
   font-size: 0.75rem;
-  font-family: var(--font-mono);
-  background: rgba(245, 229, 201, 0.05);
-  border: 1px solid var(--border-color);
-  padding: 4px 10px;
-  border-radius: 6px;
-  color: var(--text-secondary);
+  font-family: var(--font-main);
+  font-weight: 600;
+  border: 1.5px solid var(--color-atomic-orange);
+  padding: 5px 14px;
+  border-radius: 30px;
+  color: var(--color-atomic-orange);
 }
 
 .card-cta {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.92rem;
-  color: var(--color-apocalyptic-orange);
+  color: var(--color-atomic-orange);
   transition: var(--transition-smooth);
-}
-
-.hub-card:hover .card-cta svg {
-  transform: translateX(5px);
 }
 
 .card-cta svg {
-  transition: var(--transition-smooth);
+  display: none; /* Icon is in top-right notched badge */
 }
 
 /* Sections */
@@ -277,7 +334,7 @@ body {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   letter-spacing: 2px;
-  color: var(--color-apocalyptic-orange);
+  color: var(--color-atomic-orange);
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 8px;
@@ -285,17 +342,18 @@ body {
 }
 
 .section-title {
-  font-family: var(--font-heading);
-  font-size: 2.2rem;
+  font-family: var(--font-condensed);
+  font-size: 2.8rem;
   font-weight: 800;
-  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   margin-bottom: 8px;
-  color: var(--color-honey-beige);
+  color: var(--color-text-main);
 }
 
 .section-desc {
-  color: var(--text-secondary);
-  font-weight: 400;
+  color: var(--color-text-sub);
+  font-weight: 500;
 }
 
 /* Portfolio Grid */
@@ -312,24 +370,25 @@ body {
 }
 
 .portfolio-item {
-  background: var(--color-card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
+  background: var(--color-oatmilk-card);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-lg);
   overflow: hidden;
   transition: var(--transition-smooth);
 }
 
 .portfolio-item:hover {
   transform: translateY(-4px);
-  border-color: var(--border-orange);
+  border-color: var(--color-atomic-orange);
+  box-shadow: 0 16px 32px -10px rgba(233, 99, 26, 0.15);
 }
 
 .item-media {
   width: 100%;
   height: 230px;
   overflow: hidden;
-  background: #110f10;
-  border-bottom: 1px solid var(--border-color);
+  background: #DFD9CC;
+  border-bottom: 1.5px solid var(--border-color);
 }
 
 .placeholder-art {
@@ -340,17 +399,16 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  color: var(--text-muted);
+  color: var(--color-text-sub);
   font-family: var(--font-mono);
   font-size: 0.85rem;
-  background: #181617;
+  background: #E3DDCF;
 }
 
 .placeholder-icon {
   width: 36px;
   height: 36px;
-  opacity: 0.5;
-  color: var(--color-apocalyptic-orange);
+  color: var(--color-atomic-orange);
 }
 
 .item-info {
@@ -360,44 +418,46 @@ body {
 .item-category {
   font-size: 0.72rem;
   font-family: var(--font-mono);
-  color: var(--color-apocalyptic-orange);
+  color: var(--color-atomic-orange);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .item-title {
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin: 6px 0 8px;
-  color: var(--color-honey-beige);
+  font-family: var(--font-condensed);
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 4px 0 8px;
+  color: var(--color-text-main);
 }
 
 .item-desc {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
+  font-size: 0.92rem;
+  color: var(--color-text-sub);
   font-weight: 400;
 }
 
 /* About & Skills */
 .about-card {
-  background: var(--color-card-bg);
-  border: 1px solid var(--border-color);
+  background: var(--color-oatmilk-card);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: 50px;
 }
 
 .about-text h2 {
-  font-family: var(--font-heading);
-  font-size: 2rem;
+  font-family: var(--font-condensed);
+  font-size: 2.6rem;
   font-weight: 800;
-  color: var(--color-honey-beige);
+  text-transform: uppercase;
+  color: var(--color-text-main);
   margin: 8px 0 14px;
 }
 
 .about-text p {
-  color: var(--text-secondary);
+  color: var(--color-text-sub);
   font-size: 1.05rem;
   font-weight: 400;
   margin-bottom: 28px;
@@ -411,21 +471,23 @@ body {
 }
 
 .skill-pill {
-  background: rgba(245, 229, 201, 0.04);
-  border: 1px solid var(--border-color);
-  padding: 7px 16px;
-  border-radius: 6px;
+  background: var(--color-oatmilk-bg);
+  border: 1.5px solid var(--color-atomic-orange);
+  padding: 7px 18px;
+  border-radius: 30px;
   font-size: 0.85rem;
-  font-family: var(--font-mono);
-  color: var(--color-honey-beige);
+  font-family: var(--font-main);
+  font-weight: 600;
+  color: var(--color-atomic-orange);
+  transition: var(--transition-smooth);
 }
 
 .skill-pill:hover {
-  border-color: var(--color-apocalyptic-orange);
-  color: var(--color-apocalyptic-orange);
+  background: var(--color-atomic-orange);
+  color: #FFFFFF;
 }
 
-/* Minimal Contact Grid */
+/* Ref3 Minimal Contact Grid */
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -433,8 +495,8 @@ body {
 }
 
 .contact-card {
-  background: var(--color-card-bg);
-  border: 1px solid var(--border-color);
+  background: var(--color-oatmilk-card);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: 32px 28px;
   text-decoration: none;
@@ -447,9 +509,9 @@ body {
 
 .contact-card:hover {
   transform: translateY(-5px);
-  border-color: var(--color-apocalyptic-orange);
-  background: var(--color-card-hover);
-  box-shadow: 0 16px 32px -10px rgba(240, 83, 35, 0.2);
+  border-color: var(--color-atomic-orange);
+  background: var(--color-oatmilk-card-hover);
+  box-shadow: 0 16px 32px -10px rgba(233, 99, 26, 0.18);
 }
 
 .contact-card-header {
@@ -463,18 +525,18 @@ body {
   width: 46px;
   height: 46px;
   border-radius: 12px;
-  background: rgba(240, 83, 35, 0.08);
-  border: 1px solid var(--border-orange);
+  background: rgba(233, 99, 26, 0.1);
+  border: 1.5px solid var(--color-atomic-orange);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-apocalyptic-orange);
+  color: var(--color-atomic-orange);
   transition: var(--transition-smooth);
 }
 
 .contact-card:hover .contact-icon {
-  background: var(--color-apocalyptic-orange);
-  color: var(--color-dynamic-black);
+  background: var(--color-atomic-orange);
+  color: #FFFFFF;
 }
 
 .contact-icon svg {
@@ -483,18 +545,18 @@ body {
 }
 
 .contact-arrow {
-  color: var(--text-muted);
+  color: var(--color-text-sub);
   transition: var(--transition-smooth);
 }
 
 .contact-card:hover .contact-arrow {
-  color: var(--color-apocalyptic-orange);
+  color: var(--color-atomic-orange);
   transform: translate(3px, -3px);
 }
 
 .whatsapp-icon {
-  background: rgba(37, 211, 102, 0.08);
-  border-color: rgba(37, 211, 102, 0.3);
+  background: rgba(37, 211, 102, 0.1);
+  border-color: #25D366;
   color: #25D366;
 }
 
@@ -505,7 +567,7 @@ body {
 
 .whatsapp-card:hover .whatsapp-icon {
   background: #25D366;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .whatsapp-card:hover .contact-arrow {
@@ -520,17 +582,17 @@ body {
 .contact-label {
   font-size: 0.75rem;
   font-family: var(--font-mono);
-  color: var(--text-muted);
+  color: var(--color-text-sub);
   text-transform: uppercase;
   letter-spacing: 1.5px;
   margin-bottom: 4px;
 }
 
 .contact-value {
-  font-family: var(--font-heading);
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--color-honey-beige);
+  font-family: var(--font-condensed);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-text-main);
   word-break: break-all;
 }
 
@@ -538,13 +600,14 @@ body {
 .footer {
   text-align: center;
   padding: 40px 6%;
-  border-top: 1px solid var(--border-color);
-  color: var(--text-muted);
+  border-top: 1.5px solid var(--border-color);
+  color: var(--color-text-sub);
   font-size: 0.82rem;
   font-family: var(--font-mono);
 }
 
 .footer a {
-  color: var(--color-apocalyptic-orange);
+  color: var(--color-atomic-orange);
   text-decoration: none;
+  font-weight: 700;
 }
