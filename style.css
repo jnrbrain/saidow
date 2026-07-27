@@ -1,5 +1,5 @@
 /* ==========================================
-   SAIDOW.COM - ULTRA MINIMALIST PORTFOLIO STYLES
+   SAIDOW.COM - ULTRA MINIMALIST PORTFOLIO STYLES (TRIPLE HUB)
    ========================================== */
 
 :root {
@@ -100,7 +100,7 @@ body {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.8rem;
   align-items: center;
 }
 
@@ -131,7 +131,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-  padding: 160px 6% 80px;
+  padding: 150px 6% 70px;
   min-height: 85vh;
   display: flex;
   flex-direction: column;
@@ -141,8 +141,8 @@ body {
 }
 
 .hero-header {
-  max-width: 700px;
-  margin-bottom: 60px;
+  max-width: 750px;
+  margin-bottom: 50px;
 }
 
 .hero-title {
@@ -161,11 +161,11 @@ body {
   line-height: 1.6;
 }
 
-/* Minimal Dual Hub Container */
+/* Triple Hub Container (Design, Code, Art) */
 .hub-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .hub-card {
@@ -173,13 +173,13 @@ body {
   border-radius: var(--radius-lg);
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  padding: 44px 36px;
+  padding: 36px 30px;
   text-decoration: none;
   transition: var(--transition-smooth);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 380px;
+  min-height: 360px;
 }
 
 .hub-card:hover {
@@ -193,11 +193,11 @@ body {
   font-size: 0.7rem;
   letter-spacing: 2px;
   color: var(--text-muted);
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .card-title {
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   font-weight: 700;
   letter-spacing: -1px;
   color: var(--text-primary);
@@ -206,24 +206,24 @@ body {
 
 .card-desc {
   color: var(--text-secondary);
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 300;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .card-tags {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 35px;
+  gap: 6px;
+  margin-bottom: 25px;
 }
 
 .card-tags li {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-family: var(--font-mono);
   border: 1px solid var(--border-color);
-  padding: 4px 10px;
+  padding: 3px 8px;
   border-radius: 4px;
   color: var(--text-secondary);
 }
@@ -233,7 +233,7 @@ body {
   align-items: center;
   gap: 8px;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--text-primary);
   transition: var(--transition-smooth);
 }
@@ -248,13 +248,13 @@ body {
 
 /* Sections */
 .section-container {
-  padding: 100px 6%;
+  padding: 90px 6%;
   max-width: 1300px;
   margin: 0 auto;
 }
 
 .section-header {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .section-tag {
@@ -281,7 +281,7 @@ body {
 /* Portfolio Grid */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   gap: 24px;
 }
 
@@ -306,7 +306,7 @@ body {
 
 .item-media {
   width: 100%;
-  height: 240px;
+  height: 220px;
   overflow: hidden;
   background: #000000;
   border-bottom: 1px solid var(--border-color);
@@ -333,7 +333,7 @@ body {
 }
 
 .item-info {
-  padding: 24px;
+  padding: 22px;
 }
 
 .item-category {
@@ -382,7 +382,7 @@ body {
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
 }
 
 .skill-pill {
@@ -390,7 +390,7 @@ body {
   border: 1px solid var(--border-color);
   padding: 6px 14px;
   border-radius: 4px;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-family: var(--font-mono);
   color: var(--text-secondary);
 }

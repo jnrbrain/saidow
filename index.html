@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Said - Endüstriyel Tasarımcı & Sanatçı | Portfolio</title>
-  <meta name="description" content="Said - Endüstriyel Tasarım (Industrial Design) ve Sanat (Art) portfolyo sitesi. Ürün tasarımı, 3D görselleştirme, konsept ve dijital sanat çalışmaları.">
-  <meta name="keywords" content="Industrial Design, Endüstriyel Tasarım, Art, Sanat, 3D CAD, Product Design, Portfolio, Saidow">
+  <title>Said - Endüstriyel Tasarımcı & Yazılımcı | Portfolio</title>
+  <meta name="description" content="Said - Endüstriyel Tasarım (Industrial Design), Yazılım Geliştirme (Code) ve Sanat (Art) portfolyo sitesi. Fiziksel ürünler, dijital yazılımlar ve sanatsal çalışmalar.">
+  <meta name="keywords" content="Industrial Design, Endüstriyel Tasarım, Software Developer, Yazılımcı, Code, Art, Sanat, 3D CAD, Product Design, Portfolio, Saidow">
   <meta name="author" content="Said">
   
   <!-- Open Graph / Social Media -->
-  <meta property="og:title" content="Said - Endüstriyel Tasarım & Sanat Portfolyosu">
-  <meta property="og:description" content="Endüstriyel Tasarım ve Sanat projelerini keşfedin.">
+  <meta property="og:title" content="Said - Design, Code & Art Portfolio">
+  <meta property="og:description" content="Endüstriyel Tasarım, Yazılım ve Sanat projelerini keşfedin.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://saidow.com">
 
@@ -20,14 +20,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css?v=2.0">
+  <link rel="stylesheet" href="style.css?v=3.0">
   
   <!-- Model Viewer support for 3D web display -->
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 </head>
 <body>
-  <!-- Background Glow & Grid Canvas -->
-  <div class="bg-glow"></div>
+  <!-- Subtle Grid Background -->
   <div class="bg-grid"></div>
 
   <!-- Header / Navigation -->
@@ -39,6 +38,7 @@
     <nav class="nav-links">
       <a href="#hub" class="nav-link active">Keşfet</a>
       <a href="#design" class="nav-link">Design</a>
+      <a href="#code" class="nav-link">Code</a>
       <a href="#art" class="nav-link">Art</a>
       <a href="#about" class="nav-link">Hakkımda</a>
       <a href="#contact" class="nav-link btn-contact">İletişim</a>
@@ -48,49 +48,66 @@
   <!-- Hero / Hub Selection Section -->
   <section id="hub" class="hero-section">
     <div class="hero-header">
-      <h1 class="hero-title">İki Dünyanın Kesişimi</h1>
-      <p class="hero-subtitle">Endüstriyel Tasarım disiplini ile Sanatsal vizyonun buluştuğu dijital alan.</p>
+      <h1 class="hero-title">Design, Code & Art</h1>
+      <p class="hero-subtitle">Endüstriyel Tasarım disiplini, Yazılım geliştirme gücü ve Sanatsal vizyonun buluştuğu dijital alan.</p>
     </div>
 
-    <!-- Dual Split Hub (Design & Art) -->
+    <!-- Triple Hub (Design, Code & Art) -->
     <div class="hub-container">
       <!-- Design Card -->
-      <a href="#design" class="hub-card design-card">
-        <div class="card-background"></div>
-        <div class="card-content">
+      <a href="#design" class="hub-card">
+        <div class="card-top">
           <div class="card-badge">DISCIPLINE</div>
           <h2 class="card-title">DESIGN</h2>
           <p class="card-desc">Endüstriyel Tasarım, Ürün Geliştirme, 3D CAD, CMF ve İnovatif Prototipleme</p>
           <ul class="card-tags">
             <li>Product Design</li>
-            <li>3D Rendering</li>
+            <li>3D CAD</li>
             <li>Ergonomics</li>
             <li>Prototyping</li>
           </ul>
-          <div class="card-cta">
-            <span>Tasarım Projelerini İncele</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </div>
+        </div>
+        <div class="card-cta">
+          <span>Tasarım Projelerini İncele</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </a>
+
+      <!-- Code Card -->
+      <a href="#code" class="hub-card">
+        <div class="card-top">
+          <div class="card-badge">DEVELOPMENT</div>
+          <h2 class="card-title">CODE</h2>
+          <p class="card-desc">Yazılım Geliştirme, Web Teknolojileri, 3D Grafik / Interactive Web & Algoritmalar</p>
+          <ul class="card-tags">
+            <li>Software Dev</li>
+            <li>Web & 3D Web</li>
+            <li>Creative Coding</li>
+            <li>Algorithms</li>
+          </ul>
+        </div>
+        <div class="card-cta">
+          <span>Yazılım Projelerini İncele</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </div>
       </a>
 
       <!-- Art Card -->
-      <a href="#art" class="hub-card art-card">
-        <div class="card-background"></div>
-        <div class="card-content">
+      <a href="#art" class="hub-card">
+        <div class="card-top">
           <div class="card-badge">EXPRESSION</div>
           <h2 class="card-title">ART</h2>
           <p class="card-desc">Konsept Çizimler, Dijital & Geleneksel Sanat, Form Arayışları ve Dijital Heykel</p>
           <ul class="card-tags">
             <li>Concept Art</li>
             <li>Digital Sculpture</li>
-            <li>Form Exploration</li>
             <li>Visual Arts</li>
+            <li>Form Study</li>
           </ul>
-          <div class="card-cta">
-            <span>Sanat Çalışmalarını İncele</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </div>
+        </div>
+        <div class="card-cta">
+          <span>Sanat Çalışmalarını İncele</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </div>
       </a>
     </div>
@@ -99,7 +116,7 @@
   <!-- Design Section -->
   <section id="design" class="section-container">
     <div class="section-header">
-      <span class="section-tag">01 / DISCIPLINE</span>
+      <span class="section-tag">01 / DESIGN</span>
       <h2 class="section-title">Industrial Design</h2>
       <p class="section-desc">Fonksiyonel, estetik ve üretilebilir endüstriyel ürün tasarımları.</p>
     </div>
@@ -108,7 +125,7 @@
       <!-- Demo Project Item 1 -->
       <article class="portfolio-item">
         <div class="item-media">
-          <div class="placeholder-art design-theme">
+          <div class="placeholder-art">
             <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
             <span>3D Product Render</span>
           </div>
@@ -116,22 +133,63 @@
         <div class="item-info">
           <span class="item-category">Ürün Tasarımı</span>
           <h3 class="item-title">Ergonomik Masaüstü Aydınlatma</h3>
-          <p class="item-desc">Minimalist form anlayışı ve modern CMF (Color, Material, Finish) dokunuşları ile geliştirilmiş aydınlatma konsepti.</p>
+          <p class="item-desc">Minimalist form anlayışı ve modern CMF dokunuşları ile geliştirilmiş aydınlatma konsepti.</p>
         </div>
       </article>
 
       <!-- Demo Project Item 2 -->
       <article class="portfolio-item">
         <div class="item-media">
-          <div class="placeholder-art design-theme">
+          <div class="placeholder-art">
             <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
-            <span>Interactive 3D Viewer</span>
+            <span>Interactive 3D Model</span>
           </div>
         </div>
         <div class="item-info">
           <span class="item-category">İnovasyon & Medikal</span>
           <h3 class="item-title">Akıllı Sağlık Takip Cihazı</h3>
-          <p class="item-desc">Kullanıcı odaklı tasarım süreci, hızlı prototipleme ve üretim detaylandırması.</p>
+          <p class="item-desc">Kullanıcı odaklı tasarım süreci, hızlı prototipleme ve detaylı 3D modelleme.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Code Section -->
+  <section id="code" class="section-container">
+    <div class="section-header">
+      <span class="section-tag">02 / CODE</span>
+      <h2 class="section-title">Software & Development</h2>
+      <p class="section-desc">Dijital sistemler, interaktif web uygulamaları ve yazılım çözümleri.</p>
+    </div>
+
+    <div class="portfolio-grid">
+      <!-- Demo Code Item 1 -->
+      <article class="portfolio-item">
+        <div class="item-media">
+          <div class="placeholder-art">
+            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <span>Web App / Software</span>
+          </div>
+        </div>
+        <div class="item-info">
+          <span class="item-category">Yazılım & Web</span>
+          <h3 class="item-title">3D Web Ürün Görüntüleyici Engine</h3>
+          <p class="item-desc">Three.js ve WebGL altyapısıyla geliştirilmiş, tarayıcıda çalışan yüksek hızlı 3D konfigüratör.</p>
+        </div>
+      </article>
+
+      <!-- Demo Code Item 2 -->
+      <article class="portfolio-item">
+        <div class="item-media">
+          <div class="placeholder-art">
+            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/></svg>
+            <span>Algorithm & Script</span>
+          </div>
+        </div>
+        <div class="item-info">
+          <span class="item-category">Otomasyon & Araçlar</span>
+          <h3 class="item-title">Parametrik Form Üretim Aracı</h3>
+          <p class="item-desc">Endüstriyel tasarım süreçlerini hızlandıran özel geometrik hesaplama ve veri aracı.</p>
         </div>
       </article>
     </div>
@@ -140,7 +198,7 @@
   <!-- Art Section -->
   <section id="art" class="section-container">
     <div class="section-header">
-      <span class="section-tag">02 / EXPRESSION</span>
+      <span class="section-tag">03 / ART</span>
       <h2 class="section-title">Art & Expression</h2>
       <p class="section-desc">Serbest form araştırmaları, illüstrasyonlar ve dijital sanat çalışmaları.</p>
     </div>
@@ -149,7 +207,7 @@
       <!-- Demo Art Item 1 -->
       <article class="portfolio-item">
         <div class="item-media">
-          <div class="placeholder-art art-theme">
+          <div class="placeholder-art">
             <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg>
             <span>Concept Exploration</span>
           </div>
@@ -164,7 +222,7 @@
       <!-- Demo Art Item 2 -->
       <article class="portfolio-item">
         <div class="item-media">
-          <div class="placeholder-art art-theme">
+          <div class="placeholder-art">
             <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
             <span>Sculpture & Composition</span>
           </div>
@@ -184,12 +242,15 @@
       <div class="about-text">
         <span class="section-tag">Hakkımda</span>
         <h2>Merhaba, Ben Said</h2>
-        <p>Endüstriyel Tasarımcı ve Sanatçıyım. Tasarım sürecinde estetik ile mühendislik sınırlarını zorlarken, sanatsal projelerimde biçim, duygu ve malzeme etkileşimini araştırıyorum.</p>
+        <p>Endüstriyel Tasarımcı ve Yazılım Geliştiriciyim. Donanım ve yazılımın birleştiği noktada fiziksel ürünler tasarlıyor, dijital sistemler geliştiriyor ve sanatsal form araştırmaları yapıyorum.</p>
         <div class="skills-list">
           <span class="skill-pill">Industrial Design</span>
           <span class="skill-pill">SolidWorks / Rhino</span>
           <span class="skill-pill">KeyShot / Blender</span>
-          <span class="skill-pill">3D Prototyping</span>
+          <span class="skill-pill">Software Engineering</span>
+          <span class="skill-pill">JavaScript / Python</span>
+          <span class="skill-pill">Three.js / WebGL</span>
+          <span class="skill-pill">Git / Web Dev</span>
           <span class="skill-pill">Concept Art</span>
         </div>
       </div>
@@ -218,6 +279,6 @@
     <p>© 2026 Said. Tüm hakları saklıdır. — <a href="https://saidow.com">saidow.com</a></p>
   </footer>
 
-  <script src="main.js?v=2.0"></script>
+  <script src="main.js?v=3.0"></script>
 </body>
 </html>
