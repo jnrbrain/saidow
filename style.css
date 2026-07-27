@@ -525,3 +525,25 @@ body {
   color: var(--text-secondary);
   text-decoration: none;
 }
+
+/* Spark Particle Effect */
+.spark-particle {
+  position: fixed;
+  pointer-events: none;
+  border-radius: 50%;
+  z-index: 9999;
+  animation: sparkFade 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  box-shadow: 0 0 8px currentColor;
+}
+
+@keyframes sparkFade {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--dx), var(--dy)) scale(0);
+  }
+}
+
