@@ -1,28 +1,30 @@
 /* ==========================================
-   SAIDOW.COM - GRAPHIC GARDEN PALETTE & TYPOGRAPHY
+   SAIDOW.COM - AWSMCOLOR (REF2) PALETTE
+   Dynamic Black, Honey Beige, Egg Liqueur, Apocalyptic Orange
    ========================================== */
 
 :root {
-  /* Brand Color Tokens */
-  --color-orange: #FC6F20;     /* Graphic Garden Vibrant Orange */
-  --color-cream: #FEE8D0;      /* Graphic Garden Warm Cream */
-  --color-charcoal: #323232;   /* Graphic Garden Dark Charcoal */
-  --color-dark-bg: #262626;     /* Deep Backdrop */
-  --color-card-bg: #1f1f1f;     /* Subtle Card Contrast */
-  --color-card-hover: #2d2d2d;  /* Card Hover */
+  /* Brand Color Tokens (Ref2 Palette) */
+  --color-dynamic-black: #161415;  /* Dynamic Black #161415 */
+  --color-apocalyptic-orange: #F05323; /* Apocalyptic Orange */
+  --color-honey-beige: #F5E5C9;    /* Honey Beige */
+  --color-egg-liqueur: #DFD0B5;    /* Egg Liqueur */
 
-  --border-color: rgba(254, 232, 208, 0.12);
-  --border-orange: rgba(252, 111, 32, 0.4);
+  --color-card-bg: #1f1d1e;        /* Subtle Card Contrast */
+  --color-card-hover: #2a2729;     /* Card Hover */
+
+  --border-color: rgba(245, 229, 201, 0.12);
+  --border-orange: rgba(240, 83, 35, 0.45);
   
-  --text-primary: var(--color-cream);
-  --text-secondary: rgba(254, 232, 208, 0.75);
-  --text-muted: rgba(254, 232, 208, 0.45);
+  --text-primary: var(--color-honey-beige);
+  --text-secondary: var(--color-egg-liqueur);
+  --text-muted: rgba(223, 208, 181, 0.5);
   
   --font-heading: 'Plus Jakarta Sans', 'Syne', sans-serif;
   --font-main: 'Plus Jakarta Sans', sans-serif;
   --font-mono: 'Space Grotesk', monospace;
   
-  --radius-lg: 20px;
+  --radius-lg: 18px;
   --radius-md: 12px;
   --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -36,7 +38,7 @@
 html {
   scroll-behavior: smooth;
   font-family: var(--font-main);
-  background-color: var(--color-charcoal);
+  background-color: var(--color-dynamic-black);
   color: var(--text-primary);
 }
 
@@ -46,18 +48,18 @@ body {
   position: relative;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--color-charcoal);
+  background-color: var(--color-dynamic-black);
 }
 
-/* Grid Pattern */
+/* Subtle Grid Background */
 .bg-grid {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to right, rgba(254, 232, 208, 0.02) 1px, transparent 1px),
-                    linear-gradient(to bottom, rgba(254, 232, 208, 0.02) 1px, transparent 1px);
+  background-image: linear-gradient(to right, rgba(245, 229, 201, 0.018) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(245, 229, 201, 0.018) 1px, transparent 1px);
   background-size: 80px 80px;
   z-index: -1;
   pointer-events: none;
@@ -75,7 +77,7 @@ body {
   align-items: center;
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  background: rgba(50, 50, 50, 0.88);
+  background: rgba(22, 20, 21, 0.88);
   border-bottom: 1px solid var(--border-color);
   z-index: 100;
 }
@@ -92,14 +94,14 @@ body {
   font-size: 1.4rem;
   font-weight: 800;
   letter-spacing: 2px;
-  color: var(--color-cream);
+  color: var(--color-honey-beige);
 }
 
 .brand-badge {
   font-size: 0.65rem;
   font-family: var(--font-mono);
-  background: var(--color-orange);
-  color: var(--color-charcoal);
+  background: var(--color-apocalyptic-orange);
+  color: var(--color-dynamic-black);
   font-weight: 700;
   padding: 3px 8px;
   border-radius: 4px;
@@ -122,20 +124,20 @@ body {
 }
 
 .nav-link:hover, .nav-link.active {
-  color: var(--color-orange);
+  color: var(--color-apocalyptic-orange);
 }
 
 .btn-contact {
-  border: 1px solid var(--color-orange);
-  color: var(--color-orange);
+  border: 1px solid var(--color-apocalyptic-orange);
+  color: var(--color-apocalyptic-orange);
   padding: 7px 18px;
   border-radius: 8px;
   font-weight: 600;
 }
 
 .btn-contact:hover {
-  background: var(--color-orange);
-  color: var(--color-charcoal);
+  background: var(--color-apocalyptic-orange);
+  color: var(--color-dynamic-black);
 }
 
 /* Hero Section */
@@ -160,7 +162,7 @@ body {
   font-weight: 800;
   letter-spacing: -1.5px;
   margin-bottom: 18px;
-  color: var(--color-cream);
+  color: var(--color-honey-beige);
   line-height: 1.1;
 }
 
@@ -194,16 +196,16 @@ body {
 
 .hub-card:hover {
   transform: translateY(-5px);
-  border-color: var(--color-orange);
+  border-color: var(--color-apocalyptic-orange);
   background: var(--color-card-hover);
-  box-shadow: 0 16px 32px -10px rgba(252, 111, 32, 0.15);
+  box-shadow: 0 16px 32px -10px rgba(240, 83, 35, 0.2);
 }
 
 .card-badge {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   letter-spacing: 2px;
-  color: var(--color-orange);
+  color: var(--color-apocalyptic-orange);
   font-weight: 700;
   margin-bottom: 16px;
 }
@@ -213,7 +215,7 @@ body {
   font-size: 2.4rem;
   font-weight: 800;
   letter-spacing: -1px;
-  color: var(--color-cream);
+  color: var(--color-honey-beige);
   margin-bottom: 12px;
 }
 
@@ -235,7 +237,7 @@ body {
 .card-tags li {
   font-size: 0.75rem;
   font-family: var(--font-mono);
-  background: rgba(254, 232, 208, 0.05);
+  background: rgba(245, 229, 201, 0.05);
   border: 1px solid var(--border-color);
   padding: 4px 10px;
   border-radius: 6px;
@@ -248,7 +250,7 @@ body {
   gap: 8px;
   font-weight: 600;
   font-size: 0.92rem;
-  color: var(--color-orange);
+  color: var(--color-apocalyptic-orange);
   transition: var(--transition-smooth);
 }
 
@@ -275,7 +277,7 @@ body {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   letter-spacing: 2px;
-  color: var(--color-orange);
+  color: var(--color-apocalyptic-orange);
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 8px;
@@ -288,7 +290,7 @@ body {
   font-weight: 800;
   letter-spacing: -0.5px;
   margin-bottom: 8px;
-  color: var(--color-cream);
+  color: var(--color-honey-beige);
 }
 
 .section-desc {
@@ -326,7 +328,7 @@ body {
   width: 100%;
   height: 230px;
   overflow: hidden;
-  background: #181818;
+  background: #110f10;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -341,14 +343,14 @@ body {
   color: var(--text-muted);
   font-family: var(--font-mono);
   font-size: 0.85rem;
-  background: #1c1c1c;
+  background: #181617;
 }
 
 .placeholder-icon {
   width: 36px;
   height: 36px;
   opacity: 0.5;
-  color: var(--color-orange);
+  color: var(--color-apocalyptic-orange);
 }
 
 .item-info {
@@ -358,7 +360,7 @@ body {
 .item-category {
   font-size: 0.72rem;
   font-family: var(--font-mono);
-  color: var(--color-orange);
+  color: var(--color-apocalyptic-orange);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -369,7 +371,7 @@ body {
   font-size: 1.25rem;
   font-weight: 700;
   margin: 6px 0 8px;
-  color: var(--color-cream);
+  color: var(--color-honey-beige);
 }
 
 .item-desc {
@@ -390,7 +392,7 @@ body {
   font-family: var(--font-heading);
   font-size: 2rem;
   font-weight: 800;
-  color: var(--color-cream);
+  color: var(--color-honey-beige);
   margin: 8px 0 14px;
 }
 
@@ -409,21 +411,21 @@ body {
 }
 
 .skill-pill {
-  background: rgba(254, 232, 208, 0.04);
+  background: rgba(245, 229, 201, 0.04);
   border: 1px solid var(--border-color);
   padding: 7px 16px;
   border-radius: 6px;
   font-size: 0.85rem;
   font-family: var(--font-mono);
-  color: var(--color-cream);
+  color: var(--color-honey-beige);
 }
 
 .skill-pill:hover {
-  border-color: var(--color-orange);
-  color: var(--color-orange);
+  border-color: var(--color-apocalyptic-orange);
+  color: var(--color-apocalyptic-orange);
 }
 
-/* Contact Form */
+/* Minimal Contact Form */
 .contact-box {
   background: var(--color-card-bg);
   border: 1px solid var(--border-color);
@@ -437,7 +439,7 @@ body {
   font-family: var(--font-heading);
   font-size: 2rem;
   font-weight: 800;
-  color: var(--color-cream);
+  color: var(--color-honey-beige);
   margin-bottom: 8px;
 }
 
@@ -467,11 +469,11 @@ body {
 
 .contact-form input, .contact-form textarea {
   width: 100%;
-  background: var(--color-charcoal);
+  background: var(--color-dynamic-black);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 14px 18px;
-  color: var(--color-cream);
+  color: var(--color-honey-beige);
   font-family: var(--font-main);
   font-size: 0.95rem;
   outline: none;
@@ -479,13 +481,13 @@ body {
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
-  border-color: var(--color-orange);
-  box-shadow: 0 0 12px rgba(252, 111, 32, 0.2);
+  border-color: var(--color-apocalyptic-orange);
+  box-shadow: 0 0 12px rgba(240, 83, 35, 0.25);
 }
 
 .btn-primary {
-  background: var(--color-orange);
-  color: var(--color-charcoal);
+  background: var(--color-apocalyptic-orange);
+  color: var(--color-dynamic-black);
   border: none;
   padding: 15px;
   border-radius: 8px;
@@ -497,8 +499,8 @@ body {
 }
 
 .btn-primary:hover {
-  background: var(--color-cream);
-  color: var(--color-charcoal);
+  background: var(--color-honey-beige);
+  color: var(--color-dynamic-black);
   transform: translateY(-2px);
 }
 
@@ -513,6 +515,6 @@ body {
 }
 
 .footer a {
-  color: var(--color-orange);
+  color: var(--color-apocalyptic-orange);
   text-decoration: none;
 }
