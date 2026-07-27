@@ -1,0 +1,15 @@
+# PDF Portfolios and CVs (Private source files)
+*.pdf
+MuhammedSaid_Uludag_CV.pdf
+MuhammedSaid_Uludag_Portfolio.pdf
+
+# Reference design images
+ref1.jpg
+ref2.jpg
+ref3.jpg
+
+# OS and IDE temporary files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
