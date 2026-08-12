@@ -63,20 +63,29 @@ const PROJECTS = {
 
   "smart-faucet": {
     section: "Industrial Design",
-    category: "Provokatif Tasarım & Mekanizma",
+    category: "Provokatif Tasarım & Mekanizma · Grup Projesi",
     title: "Provocative Smart Faucet",
-    meta: "İTÜ EUT 367E Intr. to Mechanical Design · 2024-2025",
-    desc: "Su tüketimi bilincini artırmayı hedefleyen provokatif akıllı armatür. Dokunmatik ekran, hareket sensörü, basınç kademeleri ve debi sınırlaması ile kullanıcıyı davranış değişikliğine zorlayan 'forced choice / behaviour barrier' mekanizması üzerine kurgulandı. Parça çözümü, kullanıcı senaryosu ve gerçekçi mekan renderlarıyla sunuldu.",
-    images: 5
+    meta: "İTÜ EUT 367E Intr. to Mechanical Design · 2024-2025 · Grup Projesi (Said Uludağ, Ege Köse, Kuzey Şahin, Nihan Akbaş, Ahmet İspir)",
+    desc: "Su tüketimi bilincini artırmayı hedefleyen provokatif akıllı armatür. Dokunmatik ekran, hareket sensörü, basınç kademeleri ve debi sınırlaması ile kullanıcıyı davranış değişikliğine zorlayan 'forced choice / behaviour barrier' mekanizması üzerine kurgulandı. Problem analizi, provokasyon konsepti, parça çözümü, kullanıcı senaryosu ve gerçekçi mekan renderlarıyla sunuldu.",
+    images: 7
   },
 
   "halo-studio": {
     section: "Industrial Design",
-    category: "Spekülatif Çalışma Alanı",
+    category: "Spekülatif Tasarım · Grup Projesi",
     title: "Halo Studio — Smarter Environment",
-    meta: "İTÜ Speculative Designs · Studio IV",
-    desc: "Geleceğin akıllı çalışma ortamları için spekülatif tasarım çalışması: sürüklenebilir raylı koltuk, yürünebilir zemin paneli ve rollable OLED ekran ünitesi. Aynı kapsamda 2030 gelecek senaryosu üzerine kurgulanan Firetape ürün konsepti de geliştirildi.",
-    images: 1
+    meta: "İTÜ EUT 419E Industrial Design Studio IV · 2025-2026 · Grup Projesi (Nisan Horuz, M. Said Uludağ, Murad İsgandarlı)",
+    desc: "Geleceğin akıllı çalışma ortamları için spekülatif tasarım çalışması: sürüklenebilir raylı koltuk, yürünebilir zemin paneli, rollable OLED ekran ünitesi ve akıllı masa sistemi. Teknik çizimler, patlatılmış görünüm, malzeme analizi ve fiziksel mock-up ile desteklendi.",
+    images: 0
+  },
+
+  "firetape": {
+    section: "Industrial Design",
+    category: "Spekülatif Tasarım · Grup Projesi",
+    title: "Firetape — Speculative Product",
+    meta: "İTÜ EUT 419E Industrial Design Studio IV · 2025-2026 Warm-Up Project · Grup Projesi (Dilara Ağar, M. Said Uludağ, Nisan Horuz, Murad İsgandarlı)",
+    desc: "2030 gelecek senaryosu üzerine kurgulanan spekülatif ürün konsepti. Fosil yakıt yasağı, plastik kullanımının yasaklanması ve biyomalzeme zorunluluğu çerçevesinde tasarlanan nanokimyasal ateş başlatma bandı. Kullanıcı senaryosu ve render çalışmalarıyla sunuldu.",
+    images: 0
   },
 
   "marble-stand": {
@@ -99,10 +108,10 @@ const PROJECTS = {
 
   "water-gun": {
     section: "Industrial Design",
-    category: "Antropometri & Prototipleme",
+    category: "Antropometri & Prototipleme · Grup Projesi",
     title: "Ergonomik Su Tabancası Oyuncak",
-    meta: "İTÜ EUT 272E Human Factors · Grup Projesi",
-    desc: "Çocuk ve yetişkin el ölçülerine uygun antropometrik analizlerle tasarlanan su tabancası oyuncağı. Antropometrik çizimler, ortografik projeksiyonlar ve strafor köpük carving tekniğiyle üretilen 1:1 fiziksel mock-up ile doğrulandı.",
+    meta: "İTÜ EUT 272E Human Factors · Grup Projesi (Said Uludağ, Ahmet İspir, Ege Köse)",
+    desc: "Çocuk ve yetişkin el ölçülerine uygun antropometrik analizlerle tasarlanan su tabancası oyuncağı. Antropometrik çizimler, ortografik projeksiyonlar, kullanıcı senaryosu ve strafor köpük carving tekniğiyle üretilen 1:1 fiziksel mock-up ile doğrulandı.",
     images: 3
   },
 
@@ -176,6 +185,6 @@ const PROJECTS = {
 // Kart sıralaması (önceki/sonraki gezinmesi için)
 const PROJECT_ORDER = [
   "momora","yacht","funky-daft","urban-nexus","multimate","catia-chess",
-  "smart-faucet","halo-studio","marble-stand","ozlem-kristal","water-gun","hivennel",
+  "smart-faucet","halo-studio","firetape","marble-stand","ozlem-kristal","water-gun","hivennel",
   "hull-plugin","beyin-finance","taskisla","xox","plathue","hackathon"
 ];

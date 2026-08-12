@@ -66,7 +66,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.25rem 6%;
+  padding: 1.25rem calc((100% - 1300px) / 2 + 6%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,9 +78,17 @@ body {
   transition: padding 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
 }
 
+@media (max-width: 1400px) {
+  .navbar { padding: 1.25rem 6%; }
+}
+
 .navbar--scrolled {
-  padding: 0.7rem 6%;
+  padding: 0.7rem calc((100% - 1300px) / 2 + 6%);
   box-shadow: 0 8px 30px -12px rgba(29, 28, 26, 0.18);
+}
+
+@media (max-width: 1400px) {
+  .navbar--scrolled { padding: 0.7rem 6%; }
 }
 
 /* Scroll progress bar */
@@ -243,8 +251,109 @@ body {
   animation: heroRise 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.45s both;
 }
 
+@media (max-width: 900px) {
+  .hero-section {
+    padding: 130px 6% 50px;
+    min-height: auto;
+  }
+
+  .hero-title {
+    font-size: clamp(2.4rem, 8vw, 3.5rem);
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 5vw, 2.4rem);
+  }
+
+  .hub-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hub-card {
+    min-height: 280px;
+    padding: 28px 24px;
+  }
+
+  .card-title {
+    font-size: 2.2rem;
+  }
+}
+
 @media (max-width: 640px) {
-  .hero-stat { padding: 0 18px; }
+  .navbar {
+    padding: 1rem 5% !important;
+  }
+
+  .navbar--scrolled {
+    padding: 0.6rem 5% !important;
+  }
+
+  .brand-name {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-link {
+    font-size: 0.82rem;
+  }
+
+  .btn-contact {
+    padding: 5px 14px;
+    font-size: 0.82rem;
+  }
+
+  .hero-section {
+    padding: 110px 5% 40px;
+  }
+
+  .section-container {
+    padding: 60px 5%;
+  }
+
+  .hero-stat { padding: 0 14px; }
+
+  .hero-stat-value {
+    font-size: 1.7rem;
+  }
+
+  .hero-stat-label {
+    font-size: 0.65rem;
+  }
+
+  .card-tags li {
+    font-size: 0.68rem;
+    padding: 4px 10px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .filter-bar {
+    gap: 6px;
+  }
+
+  .filter-bar [data-filter] {
+    font-size: 0.78rem;
+    padding: 6px 14px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section-desc {
+    font-size: 0.9rem;
+  }
 }
 
 /* Triple Hub Container (Ref3 Notched Cards) */
@@ -1058,6 +1167,8 @@ body {
 .footer {
   text-align: center;
   padding: 40px 6%;
+  max-width: 1300px;
+  margin: 0 auto;
   border-top: 1.5px solid var(--border-color);
   color: var(--color-text-sub);
   font-size: 0.82rem;
