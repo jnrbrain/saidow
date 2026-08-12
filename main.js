@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const isTouch = window.matchMedia('(hover: none)').matches;
 
+  initI18n();
   initScrollSpy();
   initNavbar();
   initReveal();
@@ -17,6 +18,68 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!reducedMotion && !isTouch) {
     initCursor();
     initMagnetic();
+  }
+
+  // ---------- i18n & Language Switcher ----------
+  function initI18n() {
+    if (typeof TRANSLATIONS === 'undefined') return;
+
+    let currentLang = localStorage.getItem('saidow_lang');
+
+    // Otomatik dil tespiti (lokasyon / tarayıcı dili)
+    if (!currentLang) {
+      try {
+        const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+        const userLangs = navigator.languages || [navigator.language || ''];
+        const hasTRLang = userLangs.some(l => l.toLowerCase().includes('tr'));
+        const isTRZone = timeZone.includes('Istanbul');
+
+        if (hasTRLang || isTRZone) {
+          currentLang = 'tr';
+        } else {
+          currentLang = 'en';
+        }
+      } catch (e) {
+        currentLang = 'tr';
+      }
+    }
+
+    const setLang = (lang) => {
+      if (!TRANSLATIONS[lang]) return;
+      currentLang = lang;
+      localStorage.setItem('saidow_lang', lang);
+      document.documentElement.lang = lang;
+
+      // TR / EN buton durumlarını güncelle
+      const btnTr = document.getElementById('lang-tr');
+      const btnEn = document.getElementById('lang-en');
+      if (btnTr && btnEn) {
+        btnTr.classList.toggle('active', lang === 'tr');
+        btnEn.classList.toggle('active', lang === 'en');
+      }
+
+      // data-i18n elementlerini güncelle
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        if (TRANSLATIONS[lang][key]) {
+          el.textContent = TRANSLATIONS[lang][key];
+        }
+      });
+
+      // Dinamik project.html içeriği varsa güncelle
+      if (typeof updateProjectDetailI18n === 'function') {
+        updateProjectDetailI18n(lang);
+      }
+    };
+
+    const btnTr = document.getElementById('lang-tr');
+    const btnEn = document.getElementById('lang-en');
+
+    if (btnTr) btnTr.addEventListener('click', () => setLang('tr'));
+    if (btnEn) btnEn.addEventListener('click', () => setLang('en'));
+
+    // İlk yüklemede dili uygula
+    setLang(currentLang);
   }
 
   // ---------- Navbar scroll-spy (index) ----------

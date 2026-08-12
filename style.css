@@ -131,9 +131,15 @@ body {
   letter-spacing: 1px;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
 .nav-links {
   display: flex;
-  gap: 1.8rem;
+  gap: 1.5rem;
   align-items: center;
 }
 
@@ -144,6 +150,7 @@ body {
   font-size: 0.95rem;
   letter-spacing: 0.3px;
   transition: var(--transition-smooth);
+  white-space: nowrap;
 }
 
 .nav-link:hover, .nav-link.active {
@@ -161,6 +168,45 @@ body {
 .btn-contact:hover {
   background: var(--color-atomic-orange);
   color: #FFFFFF;
+}
+
+/* Language Switcher */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(29, 28, 26, 0.05);
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-text-sub);
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: var(--transition-smooth);
+}
+
+.lang-btn:hover {
+  color: var(--color-atomic-orange);
+}
+
+.lang-btn.active {
+  color: var(--color-atomic-orange);
+  background: rgba(233, 99, 26, 0.12);
+}
+
+.lang-divider {
+  font-size: 0.75rem;
+  color: var(--border-color);
+  user-select: none;
 }
 
 /* Hero Section */
@@ -283,32 +329,54 @@ body {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .navbar {
-    padding: 1rem 5% !important;
+    padding: 0.8rem 4% !important;
   }
-
-  .navbar--scrolled {
-    padding: 0.6rem 5% !important;
+  .nav-right {
+    gap: 0.8rem;
   }
-
+  .nav-links {
+    gap: 0.6rem;
+  }
   .brand-name {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     letter-spacing: 1px;
   }
-
-  .nav-links {
-    gap: 1rem;
-  }
-
   .nav-link {
-    font-size: 0.82rem;
+    font-size: 0.8rem;
   }
-
   .btn-contact {
-    padding: 5px 14px;
-    font-size: 0.82rem;
+    padding: 4px 10px;
+    font-size: 0.78rem;
   }
+  .lang-switch {
+    padding: 2px 6px;
+  }
+  .lang-btn {
+    font-size: 0.72rem;
+    padding: 1px 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.7rem 3% !important;
+  }
+  .brand-name {
+    font-size: 1.1rem;
+  }
+  .nav-links {
+    gap: 0.4rem;
+  }
+  .nav-link {
+    font-size: 0.75rem;
+  }
+  .btn-contact {
+    padding: 3px 8px;
+    font-size: 0.72rem;
+  }
+}
 
   .hero-section {
     padding: 110px 5% 40px;

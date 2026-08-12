@@ -31,29 +31,36 @@
     <a href="#" class="brand-logo">
       <span class="brand-name">SAİD ULUDAĞ</span>
     </a>
-    <nav class="nav-links">
-      <a href="#hub" class="nav-link active">Keşfet</a>
-      <a href="#design" class="nav-link">Design</a>
-      <a href="#code" class="nav-link">Code</a>
-      <a href="#experience" class="nav-link">Deneyim</a>
-      <a href="#contact" class="nav-link btn-contact">İletişim</a>
-    </nav>
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="#hub" class="nav-link active" data-i18n="nav_explore">Keşfet</a>
+        <a href="#design" class="nav-link" data-i18n="nav_design">Design</a>
+        <a href="#code" class="nav-link" data-i18n="nav_code">Code</a>
+        <a href="#experience" class="nav-link" data-i18n="nav_experience">Deneyim</a>
+        <a href="#contact" class="nav-link btn-contact" data-i18n="nav_contact">İletişim</a>
+      </nav>
+      <div class="lang-switch">
+        <button id="lang-tr" class="lang-btn active" aria-label="Türkçe">TR</button>
+        <span class="lang-divider">/</span>
+        <button id="lang-en" class="lang-btn" aria-label="English">EN</button>
+      </div>
+    </div>
   </header>
 
   <!-- Hero / Hub Selection Section -->
   <section id="hub" class="hero-section">
     <div class="hero-header">
       <h1 class="hero-title">Design & Code</h1>
-      <p class="hero-subtitle">Endüstriyel Tasarım disiplini ile Yazılım geliştirme gücünün buluştuğu dijital alanım.</p>
+      <p class="hero-subtitle" data-i18n="hero_subtitle">Endüstriyel Tasarım disiplini ile Yazılım geliştirme gücünün buluştuğu dijital alanım.</p>
 
       <div class="hero-stats">
         <div class="hero-stat">
           <span class="hero-stat-value" data-count="20">0</span>
-          <span class="hero-stat-label">Proje</span>
+          <span class="hero-stat-label" data-i18n="hero_stat_projects">Proje</span>
         </div>
         <div class="hero-stat">
           <span class="hero-stat-value" data-count="2">0</span>
-          <span class="hero-stat-label">Yarışma Ödülü</span>
+          <span class="hero-stat-label" data-i18n="hero_stat_awards">Yarışma Ödülü</span>
         </div>
       </div>
     </div>
@@ -63,9 +70,9 @@
       <!-- Design Card -->
       <a href="#design" class="hub-card">
         <div class="card-top">
-          <div class="card-badge">INDUSTRIAL DESIGN</div>
-          <h2 class="card-title">DESIGN</h2>
-          <p class="card-desc">Yat Tasarımı, Medikal Ürün Kiti, Parametrik Modelleme, DFM, Akıllı Armatür & Kent Mobilyaları</p>
+          <div class="card-badge" data-i18n="hub_design_badge">INDUSTRIAL DESIGN</div>
+          <h2 class="card-title" data-i18n="hub_design_title">DESIGN</h2>
+          <p class="card-desc" data-i18n="hub_design_desc">Yat Tasarımı, Medikal Ürün Kiti, Parametrik Modelleme, DFM, Akıllı Armatür & Kent Mobilyaları</p>
           <ul class="card-tags">
             <li>MOMORA Kit</li>
             <li>Yacht Design</li>
@@ -80,16 +87,16 @@
           </ul>
         </div>
         <div class="card-cta">
-          <span>Tasarım Projelerini İncele</span>
+          <span data-i18n="hub_design_cta">Tasarım Projelerini İncele</span>
         </div>
       </a>
 
       <!-- Code Card (Highlighted) -->
       <a href="#code" class="hub-card">
         <div class="card-top">
-          <div class="card-badge">SOFTWARE & INTERACTION</div>
-          <h2 class="card-title">CODE</h2>
-          <p class="card-desc">Rhino CAD Eklenti Geliştirme, Algoritmik FinTech (Beyin Finance), Oyun Sistemleri & UI/UX</p>
+          <div class="card-badge" data-i18n="hub_code_badge">SOFTWARE & INTERACTION</div>
+          <h2 class="card-title" data-i18n="hub_code_title">CODE</h2>
+          <p class="card-desc" data-i18n="hub_code_desc">Rhino CAD Eklenti Geliştirme, Algoritmik FinTech (Beyin Finance), Oyun Sistemleri & UI/UX</p>
           <ul class="card-tags">
             <li>Rhino Plugin</li>
             <li>XOX 2.0</li>
@@ -98,7 +105,7 @@
           </ul>
         </div>
         <div class="card-cta">
-          <span>Yazılım Projelerini İncele</span>
+          <span data-i18n="hub_code_cta">Yazılım Projelerini İncele</span>
         </div>
       </a>
     </div>
@@ -107,17 +114,17 @@
   <!-- Design Section -->
   <section id="design" class="section-container">
     <div class="section-header reveal">
-      <span class="section-tag">01 / INDUSTRIAL DESIGN</span>
-      <h2 class="section-title">Endüstriyel Ürün Tasarımlarım</h2>
-      <p class="section-desc">İstanbul Teknik Üniversitesi (İTÜ) akademik projeleri ve endüstriyel staj süreçlerinde geliştirilen tüm ürün tasarımları.</p>
+      <span class="section-tag" data-i18n="design_tag">01 / INDUSTRIAL DESIGN</span>
+      <h2 class="section-title" data-i18n="design_title">Endüstriyel Ürün Tasarımlarım</h2>
+      <p class="section-desc" data-i18n="design_desc">İstanbul Teknik Üniversitesi (İTÜ) akademik projeleri ve endüstriyel staj süreçlerinde geliştirilen tüm ürün tasarımları.</p>
     </div>
 
     <div class="filter-bar reveal" data-target="design-grid">
-      <button data-filter="all" class="active">Tümü</button>
-      <button data-filter="urun">Ürün</button>
-      <button data-filter="mekan">Mekan & Kent</button>
-      <button data-filter="yat">Yat Tasarımı</button>
-      <button data-filter="imalat">İmalat & Staj</button>
+      <button data-filter="all" class="active" data-i18n="filter_all">Tümü</button>
+      <button data-filter="urun" data-i18n="filter_product">Ürün</button>
+      <button data-filter="mekan" data-i18n="filter_urban">Mekan & Kent</button>
+      <button data-filter="yat" data-i18n="filter_yacht">Yat Tasarımı</button>
+      <button data-filter="imalat" data-i18n="filter_manufacturing">İmalat & Staj</button>
     </div>
 
     <div class="portfolio-grid" id="design-grid">
@@ -127,9 +134,9 @@
           <img src="assets/img/momora/hero.jpg" alt="MOMORA Maternal Care Kit ambalaj tasarımı" loading="lazy">
         </div>
         <div class="item-info">
-          <span class="item-category">Mezuniyet Projesi / Medikal</span>
+          <span class="item-category" data-i18n="p_momora_cat">Mezuniyet Projesi / Medikal</span>
           <h3 class="item-title">MOMORA — Maternal Care Kit</h3>
-          <p class="item-desc">Hamile anneler için kan basıncı takibi, dinamolu hava şişirme mekanizması ve modüler ısı terapisi sunan medikal bakım kiti.</p>
+          <p class="item-desc" data-i18n="p_momora_desc">Hamile anneler için kan basıncı takibi, dinamolu hava şişirme mekanizması ve modüler ısı terapisi sunan medikal bakım kiti.</p>
         </div>
       </a>
 
@@ -139,9 +146,9 @@
           <img src="assets/img/yacht/hero.jpg" alt="12m Lobster Yacht render görselleri" loading="lazy">
         </div>
         <div class="item-info">
-          <span class="item-category">Gemi & Yat Tasarımı</span>
+          <span class="item-category" data-i18n="p_yacht_cat">Gemi & Yat Tasarımı</span>
           <h3 class="item-title">12m Lobster Yacht Design</h3>
-          <p class="item-desc">12 metrelik Lobster tipi yatın hidrostatik analizi, 3D yüzey modellemesi, iç mekan tasarımı ve teknik çizimleri.</p>
+          <p class="item-desc" data-i18n="p_yacht_desc">12 metrelik Lobster tipi yatın hidrostatik analizi, 3D yüzey modellemesi, iç mekan tasarımı ve teknik çizimleri.</p>
         </div>
       </a>
 
@@ -151,9 +158,9 @@
           <img src="assets/img/funky-daft/hero.jpg" alt="Funky Daft yapısal hoparlör tasarımı" loading="lazy">
         </div>
         <div class="item-info">
-          <span class="item-category">Yapısal Ürün Tasarımı</span>
+          <span class="item-category" data-i18n="p_funky_cat">Yapısal Ürün Tasarımı</span>
           <h3 class="item-title">FUNKY DAFT — Structural Speaker</h3>
-          <p class="item-desc">Daft Punk müzik altyapısının 3D ses dalga formuna dönüştürülmesiyle tasarlanmış amorf lavanta renkli akustik hoparlör.</p>
+          <p class="item-desc" data-i18n="p_funky_desc">Daft Punk müzik altyapısının 3D ses dalga formuna dönüştürülmesiyle tasarlanmış amorf lavanta renkli akustik hoparlör.</p>
         </div>
       </a>
 
@@ -163,9 +170,9 @@
           <img src="assets/img/urban-nexus/hero.jpg" alt="Maçka Urban Nexus kent mobilyası konsepti" loading="lazy">
         </div>
         <div class="item-info">
-          <span class="item-category">Kent Mobilyası / Studio II</span>
+          <span class="item-category" data-i18n="p_urban_cat">Kent Mobilyası / Studio II</span>
           <h3 class="item-title">Maçka Urban Nexus</h3>
-          <p class="item-desc">Siyah çelik ve su geçirmez ahşaptan üretilen modüler yürüyüş yolu aydınlatmaları, dar masa, çeşme ve oturma elemanları ailesi.</p>
+          <p class="item-desc" data-i18n="p_urban_desc">Siyah çelik ve su geçirmez ahşaptan üretilen modüler yürüyüş yolu aydınlatmaları, dar masa, çeşme ve oturma elemanları ailesi.</p>
         </div>
       </a>
 
@@ -175,9 +182,9 @@
           <img src="assets/img/multimate/hero.jpg" alt="MultiMate Tool ürün detayları" loading="lazy">
         </div>
         <div class="item-info">
-          <span class="item-category">Mekanik Ürün Tasarımı</span>
-          <h3 class="item-title">MultiMate Tool — Takı Sanatı Kiti</h3>
-          <p class="item-desc">Takı tasarımcıları için özel geliştirilmiş ergonomik yan keski, çıtçıt pensesi, mezura ve iplik takma sistemi.</p>
+          <span class="item-category" data-i18n="p_multimate_cat">Mekanik Ürün Tasarımı</span>
+          <h3 class="item-title" data-i18n="p_multimate_title">MultiMate Tool — Takı Sanatı Kiti</h3>
+          <p class="item-desc" data-i18n="p_multimate_desc">Takı tasarımcıları için özel geliştirilmiş ergonomik yan keski, çıtçıt pensesi, mezura ve iplik takma sistemi.</p>
         </div>
       </a>
 
@@ -187,9 +194,9 @@
           <img src="assets/img/catia-chess/hero.jpg" alt="Askeri temalı CATIA satranç takımı" loading="lazy">
         </div>
         <div class="item-info">
-          <span class="item-category">Parametrik Solid Modelleme</span>
-          <h3 class="item-title">Askeri Temalı CATIA Satranç Takımı</h3>
-          <p class="item-desc">Me 262 savaş uçağı (At), füze (Fil), sığınak (Kale) ve kabartma harita tahtasından oluşan parametrik katı modelleme.</p>
+          <span class="item-category" data-i18n="p_chess_cat">Parametrik Solid Modelleme</span>
+          <h3 class="item-title" data-i18n="p_chess_title">Askeri Temalı CATIA Satranç Takımı</h3>
+          <p class="item-desc" data-i18n="p_chess_desc">Me 262 savaş uçağı (At), füze (Fil), sığınak (Kale) ve kabartma harita tahtasından oluşan parametrik katı modelleme.</p>
         </div>
       </a>
 
@@ -199,9 +206,9 @@
           <img src="assets/img/smart-faucet/hero.jpg" alt="Provocative Smart Faucet akıllı armatür" loading="lazy">
         </div>
         <div class="item-info">
-          <span class="item-category">Provokatif Tasarım & Mekanizma · Grup Projesi</span>
+          <span class="item-category" data-i18n="p_faucet_cat">Provokatif Tasarım & Mekanizma · Grup Projesi</span>
           <h3 class="item-title">Provocative Smart Faucet</h3>
-          <p class="item-desc">Su tasarrufu bilincini artıran dokunmatik ekranlı, hareket sensörlü ve debi sınırlamalı akıllı armatür/çeşme tasarımı. (5 kişilik grup projesi)</p>
+          <p class="item-desc" data-i18n="p_faucet_desc">Su tasarrufu bilincini artıran dokunmatik ekranlı, hareket sensörlü ve debi sınırlamalı akıllı armatür/çeşme tasarımı. (5 kişilik grup projesi)</p>
         </div>
       </a>
 
@@ -211,9 +218,9 @@
           <img src="assets/img/halo-studio/hero.jpg" alt="Halo Studio spekülatif çalışma alanı" loading="lazy">
         </div>
         <div class="item-info">
-          <span class="item-category">Spekülatif Tasarım · Grup Projesi</span>
+          <span class="item-category" data-i18n="p_halo_cat">Spekülatif Tasarım · Grup Projesi</span>
           <h3 class="item-title">Halo Studio — Smarter Environment</h3>
-          <p class="item-desc">Akıllı çalışma ortamları için tasarlanmış sürüklenebilir raylı koltuk, yürünebilir zemin paneli ve rollable OLED ekran ünitesi. (3 kişilik grup projesi)</p>
+          <p class="item-desc" data-i18n="p_halo_desc">Akıllı çalışma ortamları için tasarlanmış sürüklenebilir raylı koltuk, yürünebilir zemin paneli ve rollable OLED ekran ünitesi. (3 kişilik grup projesi)</p>
         </div>
       </a>
 
@@ -223,9 +230,9 @@
           <img src="assets/img/firetape/hero.jpg" alt="Firetape spekülatif ürün konsepti" loading="lazy">
         </div>
         <div class="item-info">
-          <span class="item-category">Spekülatif Tasarım · Grup Projesi</span>
+          <span class="item-category" data-i18n="p_firetape_cat">Spekülatif Tasarım · Grup Projesi</span>
           <h3 class="item-title">Firetape — Speculative Product</h3>
-          <p class="item-desc">2030 gelecek senaryosu için nanokimyasal ateş başlatma bandı konsepti. Fosil yakıt yasağı ve biyomalzeme zorunluluğu çerçevesinde tasarlandı. (4 kişilik grup projesi)</p>
+          <p class="item-desc" data-i18n="p_firetape_desc">2030 gelecek senaryosu için nanokimyasal ateş başlatma bandı konsepti. Fosil yakıt yasağı ve biyomalzeme zorunluluğu çerçevesinde tasarlandı. (4 kişilik grup projesi)</p>
         </div>
       </a>
 
@@ -235,9 +242,9 @@
           <img src="assets/img/marble-stand/hero.jpg" alt="Turkish Stones mermer sergi standı" loading="lazy">
         </div>
         <div class="item-info">
-          <span class="item-category">Mekan & Stant Tasarımı</span>
-          <h3 class="item-title">Turkish Stones — Mermer Sergi Standı</h3>
-          <p class="item-desc">Doğal Türk mermerlerini temsil eden mermer kuleler, interaktif deneyim alanı ve kilitli küre mermer bardak altlıkları.</p>
+          <span class="item-category" data-i18n="p_marble_cat">Mekan & Stant Tasarımı</span>
+          <h3 class="item-title" data-i18n="p_marble_title">Turkish Stones — Mermer Sergi Standı</h3>
+          <p class="item-desc" data-i18n="p_marble_desc">Doğal Türk mermerlerini temsil eden mermer kuleler, interaktif deneyim alanı ve kilitli küre mermer bardak altlıkları.</p>
         </div>
       </a>
 
@@ -247,9 +254,9 @@
           <img src="assets/img/ozlem-kristal/hero.jpg" alt="Özlem Kristal sanatsal cam objeler ve trofeler" loading="lazy">
         </div>
         <div class="item-info">
-          <span class="item-category">Cam & Metal İmalatı</span>
-          <h3 class="item-title">Özlem Kristal Sanatsal Cam Objeler</h3>
-          <p class="item-desc">Vitro lazer cam içi işleme ile üretilen Dört Ayaklı Minare, Zerzevan Kalesi, Diyarbakır Şehir Çizgisi ve Selçuklu motifleri cam trofeleri.</p>
+          <span class="item-category" data-i18n="p_ozlem_cat">Cam & Metal İmalatı</span>
+          <h3 class="item-title" data-i18n="p_ozlem_title">Özlem Kristal Sanatsal Cam Objeler</h3>
+          <p class="item-desc" data-i18n="p_ozlem_desc">Vitro lazer cam içi işleme ile üretilen Dört Ayaklı Minare, Zerzevan Kalesi, Diyarbakır Şehir Çizgisi ve Selçuklu motifleri cam trofeleri.</p>
         </div>
       </a>
 
@@ -259,9 +266,9 @@
           <img src="assets/img/water-gun/hero.jpg" alt="Ergonomik su tabancası köpük mock-up" loading="lazy">
         </div>
         <div class="item-info">
-          <span class="item-category">Antropometri & Prototipleme · Grup Projesi</span>
-          <h3 class="item-title">Ergonomik Su Tabancası Oyuncak</h3>
-          <p class="item-desc">Çocuk ve yetişkin el ölçülerine uygun antropometrik analizler, strafor köpük carving mock-up'lar ve fiziki oyuncak modeli. (3 kişilik grup projesi)</p>
+          <span class="item-category" data-i18n="p_watergun_cat">Antropometri & Prototipleme · Grup Projesi</span>
+          <h3 class="item-title" data-i18n="p_watergun_title">Ergonomik Su Tabancası Oyuncak</h3>
+          <p class="item-desc" data-i18n="p_watergun_desc">Çocuk ve yetişkin el ölçülerine uygun antropometrik analizler, strafor köpük carving mock-up'lar ve fiziki oyuncak modeli. (3 kişilik grup projesi)</p>
         </div>
       </a>
 
@@ -271,9 +278,9 @@
           <img src="assets/img/hivennel/hero.jpg" alt="Hivennel modüler ahşap köpek kulübesi" loading="lazy">
         </div>
         <div class="item-info">
-          <span class="item-category">İmalat & Ahşap Tasarımı</span>
-          <h3 class="item-title">Hivennel Kulübe & Ahşap Masa Lambası</h3>
-          <p class="item-desc">Modüler altıgen ahşap evcil hayvan kulübesi ve çift kollu ledli masif ahşap masa lambası prototip çalışmaları.</p>
+          <span class="item-category" data-i18n="p_hivennel_cat">İmalat & Ahşap Tasarımı</span>
+          <h3 class="item-title" data-i18n="p_hivennel_title">Hivennel Kulübe & Ahşap Masa Lambası</h3>
+          <p class="item-desc" data-i18n="p_hivennel_desc">Modüler altıgen ahşap evcil hayvan kulübesi ve çift kollu ledli masif ahşap masa lambası prototip çalışmaları.</p>
         </div>
       </a>
     </div>
@@ -282,16 +289,16 @@
   <!-- Code Section -->
   <section id="code" class="section-container">
     <div class="section-header reveal">
-      <span class="section-tag">02 / SOFTWARE & INTERACTION</span>
-      <h2 class="section-title">Yazılım & İnteraktif Projeler</h2>
-      <p class="section-desc">CAD eklenti geliştirme, AWS tabanlı backend mimarisi, algoritmik FinTech sistemleri ve dijital oyunlar.</p>
+      <span class="section-tag" data-i18n="code_tag">02 / SOFTWARE & INTERACTION</span>
+      <h2 class="section-title" data-i18n="code_title">Yazılım & İnteraktif Projeler</h2>
+      <p class="section-desc" data-i18n="code_desc">CAD eklenti geliştirme, AWS tabanlı backend mimarisi, algoritmik FinTech sistemleri ve dijital oyunlar.</p>
     </div>
 
     <div class="filter-bar reveal" data-target="code-grid">
-      <button data-filter="all" class="active">Tümü</button>
-      <button data-filter="cad">CAD & Araçlar</button>
-      <button data-filter="fintech">FinTech</button>
-      <button data-filter="oyun">Oyun</button>
+      <button data-filter="all" class="active" data-i18n="filter_all">Tümü</button>
+      <button data-filter="cad" data-i18n="filter_cad">CAD & Araçlar</button>
+      <button data-filter="fintech" data-i18n="filter_fintech">FinTech</button>
+      <button data-filter="oyun" data-i18n="filter_game">Oyun</button>
     </div>
 
     <div class="portfolio-grid" id="code-grid">
@@ -301,9 +308,9 @@
           <img src="assets/img/hull-plugin/hero.jpg" alt="Unified Yacht Hull Generator Rhino eklentisi" loading="lazy">
         </div>
         <div class="item-info">
-          <span class="item-category">Rhino CAD Eklentisi</span>
+          <span class="item-category" data-i18n="p_hull_cat">Rhino CAD Eklentisi</span>
           <h3 class="item-title">Unified Yacht Hull Generator Plugin</h3>
-          <p class="item-desc">Rhinoceros 3D için Python ile geliştirdiğim, gemi/yat gövdelerini otomatik parametrik oluşturan ve anlık hidrostatik rapor üreten yazılım eklentisi.</p>
+          <p class="item-desc" data-i18n="p_hull_desc">Rhinoceros 3D için Python ile geliştirdiğim, gemi/yat gövdelerini otomatik parametrik oluşturan ve anlık hidrostatik rapor üreten yazılım eklentisi.</p>
         </div>
       </a>
 
@@ -313,9 +320,9 @@
           <img src="assets/img/beyin-finance/hero.jpg" alt="Beyin Finance ekibi İTÜ Çekirdek" loading="lazy">
         </div>
         <div class="item-info">
-          <span class="item-category">FinTech Girişimi & AWS Backend</span>
-          <h3 class="item-title">Beyin Finance — Algoritmik Trading Platformu</h3>
-          <p class="item-desc">İTÜ Çekirdek kabulü almış FinTech girişimimiz için AWS tabanlı sunucu backend geliştirilmesi, veri görselleştirmesi ve ticaret otomasyon araçları.</p>
+          <span class="item-category" data-i18n="p_beyin_cat">FinTech Girişimi & AWS Backend</span>
+          <h3 class="item-title" data-i18n="p_beyin_title">Beyin Finance — Algoritmik Trading Platformu</h3>
+          <p class="item-desc" data-i18n="p_beyin_desc">İTÜ Çekirdek kabulü almış FinTech girişimimiz için AWS tabanlı sunucu backend geliştirilmesi, veri görselleştirmesi ve ticaret otomasyon araçları.</p>
         </div>
       </a>
 
@@ -325,9 +332,9 @@
           <img src="assets/img/taskisla/hero.jpg" alt="Taşkışla Online oyun arayüzü" loading="lazy">
         </div>
         <div class="item-info">
-          <span class="item-category">Multiplayer Oyun & Arayüz</span>
+          <span class="item-category" data-i18n="p_taskisla_cat">Multiplayer Oyun & Arayüz</span>
           <h3 class="item-title">Taşkışla Online</h3>
-          <p class="item-desc">İTÜ Taşkışla kampüsü konseptli izometrik multiplayer oyun tasarımı, arayüz mimarisi ve Sezon Kartı (Season Pass) UI/UX seti.</p>
+          <p class="item-desc" data-i18n="p_taskisla_desc">İTÜ Taşkışla kampüsü konseptli izometrik multiplayer oyun tasarımı, arayüz mimarisi ve Sezon Kartı (Season Pass) UI/UX seti.</p>
         </div>
       </a>
 
@@ -337,9 +344,9 @@
           <img src="assets/img/xox/hero.jpg" alt="XOX 2.0 Tap to Match oyun ikonu" loading="lazy">
         </div>
         <div class="item-info">
-          <span class="item-category">Oyun Mekaniği & Algoritma</span>
+          <span class="item-category" data-i18n="p_xox_cat">Oyun Mekaniği & Algoritma</span>
           <h3 class="item-title">XOX 2.0 — Tap to Match</h3>
-          <p class="item-desc">Online multiplayer, arkadaşla oynama, liderlik tablosu ve başarı sistemiyle donatılmış strateji oyunu.</p>
+          <p class="item-desc" data-i18n="p_xox_desc">Online multiplayer, arkadaşla oynama, liderlik tablosu ve başarı sistemiyle donatılmış strateji oyunu.</p>
         </div>
       </a>
 
@@ -349,9 +356,9 @@
           <img src="assets/img/plathue/hero.jpg" alt="PlatHue renk platformer oyunu" loading="lazy">
         </div>
         <div class="item-info">
-          <span class="item-category">Mobil Oyun Tasarımı</span>
-          <h3 class="item-title">PlatHue — Color Platformer</h3>
-          <p class="item-desc">Dinamik renk değiştirme mekanikleri, lav engelleri ve refleks bazlı platformer oyun sistemleri.</p>
+          <span class="item-category" data-i18n="p_plathue_cat">Mobil Oyun Tasarımı</span>
+          <h3 class="item-title" data-i18n="p_plathue_title">PlatHue — Color Platformer</h3>
+          <p class="item-desc" data-i18n="p_plathue_desc">Dinamik renk değiştirme mekanikleri, lav engelleri ve refleks bazlı platformer oyun sistemleri.</p>
         </div>
       </a>
 
@@ -360,13 +367,13 @@
         <div class="item-media">
           <div class="placeholder-art">
             <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <span>1st Place</span>
+            <span data-i18n="p_windy_badge">1st Place</span>
           </div>
         </div>
         <div class="item-info">
-          <span class="item-category">Yarışma Birincisi · Dijital Oyun</span>
-          <h3 class="item-title">Windy Wand — 1. Ödül</h3>
-          <p class="item-desc">2019 Mersin Technoscope "Fikrinle Yürü Fikrinle Büyü" Dijital Oyun Yarışması birincisi. Rüzgar temalı mekanikler ve etkileşim tasarımı.</p>
+          <span class="item-category" data-i18n="p_windy_cat">Yarışma Birincisi · Dijital Oyun</span>
+          <h3 class="item-title" data-i18n="p_windy_title">Windy Wand — 1. Ödül</h3>
+          <p class="item-desc" data-i18n="p_windy_desc">2019 Mersin Technoscope "Fikrinle Yürü Fikrinle Büyü" Dijital Oyun Yarışması birincisi. Rüzgar temalı mekanikler ve etkileşim tasarımı.</p>
         </div>
       </a>
 
@@ -375,13 +382,13 @@
         <div class="item-media">
           <div class="placeholder-art">
             <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <span>2nd Place</span>
+            <span data-i18n="p_hackathon_badge">2nd Place</span>
           </div>
         </div>
         <div class="item-info">
-          <span class="item-category">Hackathon İkincisi · Oyun</span>
+          <span class="item-category" data-i18n="p_hackathon_cat">Hackathon İkincisi · Oyun</span>
           <h3 class="item-title">Memory Looper</h3>
-          <p class="item-desc">2022 İTÜ GameTech Hackathon (GoodJob Games) ikinciliği kazanan hafıza döngüsü temalı oyun tasarımı.</p>
+          <p class="item-desc" data-i18n="p_hackathon_desc">2022 İTÜ GameTech Hackathon (GoodJob Games) ikinciliği kazanan hafıza döngüsü temalı oyun tasarımı.</p>
         </div>
       </a>
     </div>
@@ -390,9 +397,9 @@
   <!-- Experience Section -->
   <section id="experience" class="section-container">
     <div class="section-header reveal">
-      <span class="section-tag">03 / PROFESSIONAL EXPERIENCE</span>
-      <h2 class="section-title">Profesyonel Deneyim</h2>
-      <p class="section-desc">Endüstriyel tasarım, girişimcilik ve uluslararası proje yönetimi deneyimlerim.</p>
+      <span class="section-tag" data-i18n="exp_tag">03 / PROFESSIONAL EXPERIENCE</span>
+      <h2 class="section-title" data-i18n="exp_title">Profesyonel Deneyim</h2>
+      <p class="section-desc" data-i18n="exp_desc">Endüstriyel tasarım, girişimcilik ve uluslararası proje yönetimi deneyimlerim.</p>
     </div>
 
     <div class="exp-timeline">
@@ -402,14 +409,14 @@
         <div class="exp-card">
           <div class="exp-header">
             <div class="exp-title-group">
-              <h3 class="exp-title">Industrial Design Intern</h3>
-              <span class="exp-company">Deniz Cam Dekorasyon San. ve Tic. Ltd.Şti.</span>
+              <h3 class="exp-title" data-i18n="exp_deniz_title">Industrial Design Intern</h3>
+              <span class="exp-company" data-i18n="exp_deniz_company">Deniz Cam Dekorasyon San. ve Tic. Ltd.Şti.</span>
             </div>
-            <span class="exp-badge">Staj</span>
+            <span class="exp-badge" data-i18n="exp_intern_badge">Staj</span>
           </div>
           <div class="exp-meta">
-            <span>Tem 2026 – Devam Ediyor</span>
-            <span>Kâğıthane, İstanbul</span>
+            <span data-i18n="exp_deniz_date">Tem 2026 – Devam Ediyor</span>
+            <span data-i18n="exp_deniz_loc">Kâğıthane, İstanbul</span>
           </div>
           <div class="exp-skills">
             <span>Rhinoceros</span>
@@ -425,21 +432,21 @@
         <div class="exp-card">
           <div class="exp-header">
             <div class="exp-title-group">
-              <h3 class="exp-title">Endüstriyel Tasarım Stajyeri</h3>
-              <span class="exp-company">Özlem Kristal San. ve Tic. A.Ş.</span>
+              <h3 class="exp-title" data-i18n="exp_ozlem_title">Endüstriyel Tasarım Stajyeri</h3>
+              <span class="exp-company" data-i18n="exp_ozlem_company">Özlem Kristal San. ve Tic. A.Ş.</span>
             </div>
-            <span class="exp-badge">Staj</span>
+            <span class="exp-badge" data-i18n="exp_intern_badge">Staj</span>
           </div>
           <div class="exp-meta">
-            <span>Haz 2025 – Ağu 2025 · 3 ay</span>
-            <span>İstanbul, Türkiye</span>
+            <span data-i18n="exp_ozlem_date">Haz 2025 – Ağu 2025 · 3 ay</span>
+            <span data-i18n="exp_ozlem_loc">İstanbul, Türkiye</span>
           </div>
           <div class="exp-skills">
             <span>Rhinoceros</span>
             <span>Cam İşleme</span>
             <span>KeyShot</span>
           </div>
-          <a href="project.html?id=ozlem-kristal" class="exp-project-link">Staj Projelerini İncele →</a>
+          <a href="project.html?id=ozlem-kristal" class="exp-project-link" data-i18n="exp_link">Staj Projelerini İncele →</a>
         </div>
       </div>
 
@@ -449,16 +456,16 @@
         <div class="exp-card">
           <div class="exp-header">
             <div class="exp-title-group">
-              <h3 class="exp-title">New Entrepreneur — Project Management</h3>
-              <span class="exp-company">Asociatia CPDIS · Erasmus for Young Entrepreneurs</span>
+              <h3 class="exp-title" data-i18n="exp_erasmus_title">New Entrepreneur — Project Management</h3>
+              <span class="exp-company" data-i18n="exp_erasmus_company">Asociatia CPDIS · Erasmus for Young Entrepreneurs</span>
             </div>
-            <span class="exp-badge">Erasmus</span>
+            <span class="exp-badge" data-i18n="exp_erasmus_badge">Erasmus</span>
           </div>
           <div class="exp-meta">
-            <span>Tem 2024 – Eyl 2024 · 3 ay</span>
-            <span>Bükreş, Romanya</span>
+            <span data-i18n="exp_erasmus_date">Tem 2024 – Eyl 2024 · 3 ay</span>
+            <span data-i18n="exp_erasmus_loc">Bükreş, Romanya</span>
           </div>
-          <p class="exp-desc">Erasmus for Young Entrepreneurs programı kapsamında sosyal medya yönetimi, veritabanı ve proje yönetimi üzerine çalışıldı. HE: Adriana Bebelea, IO: İstanbul Sanayi Odası.</p>
+          <p class="exp-desc" data-i18n="exp_erasmus_desc">Erasmus for Young Entrepreneurs programı kapsamında sosyal medya yönetimi, veritabanı ve proje yönetimi üzerine çalışıldı. HE: Adriana Bebelea, IO: İstanbul Sanayi Odası.</p>
           <div class="exp-skills">
             <span>Project Management</span>
             <span>Content Editing</span>
@@ -473,16 +480,16 @@
         <div class="exp-card">
           <div class="exp-header">
             <div class="exp-title-group">
-              <h3 class="exp-title">Ekip Lideri & Interaction Designer</h3>
-              <span class="exp-company">Beyin Finance · İTÜ Çekirdek Ön Kuluçka</span>
+              <h3 class="exp-title" data-i18n="exp_beyin_title">Ekip Lideri & Interaction Designer</h3>
+              <span class="exp-company" data-i18n="exp_beyin_company">Beyin Finance · İTÜ Çekirdek Ön Kuluçka</span>
             </div>
-            <span class="exp-badge exp-badge--active">Aktif</span>
+            <span class="exp-badge exp-badge--active" data-i18n="exp_active_badge">Aktif</span>
           </div>
           <div class="exp-meta">
-            <span>Şub 2022 – Devam Ediyor</span>
-            <span>İstanbul, Türkiye</span>
+            <span data-i18n="exp_beyin_date">Şub 2022 – Devam Ediyor</span>
+            <span data-i18n="exp_beyin_loc">İstanbul, Türkiye</span>
           </div>
-          <p class="exp-desc">Kullanıcıların finansal piyasalarda daha bilinçli kararlar almasına yardımcı olan teknoloji odaklı FinTech girişimi. Teknik göstergeler, algoritmik sinyaller ve veri görselleştirme araçları geliştiriyoruz. İTÜ Çekirdek Ön Kuluçka programı mezunu, AWS Startups $25.000 hibe destekçisi.</p>
+          <p class="exp-desc" data-i18n="exp_beyin_desc">Kullanıcıların finansal piyasalarda daha bilinçli kararlar almasına yardımcı olan teknoloji odaklı FinTech girişimi. Teknik göstergeler, algoritmik sinyaller ve veri görselleştirme araçları geliştiriyoruz. İTÜ Çekirdek Ön Kuluçka programı mezunu, AWS Startups $25.000 hibe destekçisi.</p>
           <div class="exp-skills">
             <span>AWS</span>
             <span>DynamoDB</span>
@@ -501,10 +508,10 @@
   <section id="about" class="section-container about-section">
     <div class="about-card reveal">
       <div class="about-text">
-        <span class="section-tag">HAKKIMDA</span>
+        <span class="section-tag" data-i18n="about_tag">HAKKIMDA</span>
         <h2>M. Said Uludağ</h2>
-        <p><em>"Benim için tasarım, disiplinler arasında bir köprüdür. Fiziksel ürünler, dijital sistemler ve kullanıcı deneyimini tek bir odakta buluşturuyorum."</em></p>
-        <p style="margin-top: 12px;">İstanbul Teknik Üniversitesi (İTÜ) Endüstriyel Tasarım bölümü öğrencisiyim. Ürün geliştirmenin yanı sıra etkileşim tasarımı, AWS tabanlı backend sistemleri, Python/C++ ile CAD eklenti geliştirme ve mobil arayüzler üzerine çalışıyorum.</p>
+        <p><em data-i18n="about_quote">"Benim için tasarım, disiplinler arasında bir köprüdür. Fiziksel ürünler, dijital sistemler ve kullanıcı deneyimini tek bir odakta buluşturuyorum."</em></p>
+        <p style="margin-top: 12px;" data-i18n="about_p">İstanbul Teknik Üniversitesi (İTÜ) Endüstriyel Tasarım bölümü öğrencisiyim. Ürün geliştirmenin yanı sıra etkileşim tasarımı, AWS tabanlı backend sistemleri, Python/C++ ile CAD eklenti geliştirme ve mobil arayüzler üzerine çalışıyorum.</p>
         
         <div class="skills-list" style="margin-top: 24px;">
           <span class="skill-pill">İTÜ Endüstriyel Tasarım (2021-2026)</span>
@@ -521,13 +528,13 @@
         </div>
 
         <div style="margin-top: 30px; padding-top: 24px; border-top: 1px solid var(--border-color);">
-          <span class="section-tag" style="margin-bottom: 12px;">BAŞARILAR & DESTEKLER</span>
+          <span class="section-tag" style="margin-bottom: 12px;" data-i18n="about_awards_tag">BAŞARILAR & DESTEKLER</span>
           <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.9rem;">
-            <span style="color: var(--color-atomic-orange); font-weight: 700;">★ 1.lik: 2019 "Fikrinle Yürü Fikrinle Büyü" Dijital Oyun Yarışması (Mersin Technoscope)</span>
-            <span style="color: var(--color-atomic-orange); font-weight: 700;">★ 2.lik: 2022 İTÜ GameTech Hackathon (GoodJob Games - Memory Looper)</span>
-            <span style="color: var(--color-atomic-orange); font-weight: 700;">★ 2022 2. Dönem İTÜ Çekirdek Ön Kuluçka Programı Kabulü (Beyin Finance)</span>
-            <span style="color: var(--color-atomic-orange); font-weight: 700;">★ 25.000$ AWS Startups Hibe Desteği</span>
-            <span style="color: var(--color-atomic-orange); font-weight: 700;">★ 2026 LimonCloud Finansal AI Proje Ortaklığı</span>
+            <span style="color: var(--color-atomic-orange); font-weight: 700;" data-i18n="award_1">★ 1.lik: 2019 "Fikrinle Yürü Fikrinle Büyü" Dijital Oyun Yarışması (Mersin Technoscope)</span>
+            <span style="color: var(--color-atomic-orange); font-weight: 700;" data-i18n="award_2">★ 2.lik: 2022 İTÜ GameTech Hackathon (GoodJob Games - Memory Looper)</span>
+            <span style="color: var(--color-atomic-orange); font-weight: 700;" data-i18n="award_3">★ 2022 2. Dönem İTÜ Çekirdek Ön Kuluçka Programı Kabulü (Beyin Finance)</span>
+            <span style="color: var(--color-atomic-orange); font-weight: 700;" data-i18n="award_4">★ 25.000$ AWS Startups Hibe Desteği</span>
+            <span style="color: var(--color-atomic-orange); font-weight: 700;" data-i18n="award_5">★ 2026 LimonCloud Finansal AI Proje Ortaklığı</span>
           </div>
         </div>
       </div>
@@ -537,9 +544,9 @@
   <!-- Contact Section -->
   <section id="contact" class="section-container contact-section">
     <div class="section-header reveal">
-      <span class="section-tag">04 / CONTACT & PROFILES</span>
-      <h2 class="section-title">İletişime Geçin</h2>
-      <p class="section-desc">Yeni bir proje, iş birliği veya fikir alışverişi için doğrudan ulaşabilirsiniz.</p>
+      <span class="section-tag" data-i18n="contact_tag">04 / CONTACT & PROFILES</span>
+      <h2 class="section-title" data-i18n="contact_title">İletişime Geçin</h2>
+      <p class="section-desc" data-i18n="contact_desc">Yeni bir proje, iş birliği veya fikir alışverişi için doğrudan ulaşabilirsiniz.</p>
     </div>
 
     <div class="contact-grid">
@@ -552,7 +559,7 @@
           <svg class="contact-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
         </div>
         <div class="contact-card-body">
-          <span class="contact-label">Kişisel E-Posta</span>
+          <span class="contact-label" data-i18n="contact_personal">Kişisel E-Posta</span>
           <span class="contact-value">m.saiduludag@gmail.com</span>
         </div>
       </a>
@@ -566,7 +573,7 @@
           <svg class="contact-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
         </div>
         <div class="contact-card-body">
-          <span class="contact-label">Kurumsal E-Posta</span>
+          <span class="contact-label" data-i18n="contact_corporate">Kurumsal E-Posta</span>
           <span class="contact-value">said@beyinfinance.com</span>
         </div>
       </a>
@@ -580,7 +587,7 @@
           <svg class="contact-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
         </div>
         <div class="contact-card-body">
-          <span class="contact-label">Telefon & WhatsApp</span>
+          <span class="contact-label" data-i18n="contact_phone">Telefon & WhatsApp</span>
           <span class="contact-value">+90 551 121 88 40</span>
         </div>
       </a>
@@ -597,9 +604,10 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <p>© 2026 Said Uludağ. Tüm hakları saklıdır. — <a href="https://saidow.com">saidow.com</a></p>
+    <p><span data-i18n="footer_text">© 2026 Said Uludağ. Tüm hakları saklıdır. — </span><a href="https://saidow.com">saidow.com</a></p>
   </footer>
 
-  <script src="main.js?v=13.0"></script>
+  <script src="i18n.js?v=1.0"></script>
+  <script src="main.js?v=14.0"></script>
 </body>
 </html>
