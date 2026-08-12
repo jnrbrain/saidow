@@ -142,7 +142,7 @@ const PROJECTS = {
     meta: "İTÜ Çekirdek & AWS Startups · 2022-Günümüz · beyinfinance.com",
     desc: "İTÜ Çekirdek Ön Kuluçka programına kabul edilen FinTech girişimimiz. 3 kişilik ekipte AWS tabanlı sunucu backend mimarisini geliştirdim, veri görselleştirme sistemlerini kurdum ve mobil uygulama arayüzlerini etkileşim tasarımıyla iyileştirdim. AWS Startups'tan toplam $25.000 hibe desteği aldı; 2026'da marka tescil başvurusu yapıldı.",
     link: "https://beyinfinance.com",
-    images: 0
+    images: 3
   },
 
   "taskisla": {
@@ -158,9 +158,9 @@ const PROJECTS = {
     section: "Software & Interaction",
     category: "Oyun Mekaniği & Algoritma",
     title: "XOX 2.0 — Tap to Match",
-    meta: "Interaction Design · Puzzle Game Engine",
-    desc: "Klasik XOX'u yeniden yorumlayan strateji oyunu: dock sistemi mekaniği, dinamik sıra takibi ve özel desen eşleştirme algoritmaları. Oyun kuralları, mekanikler ve multiplayer özellikleriyle birlikte tasarlandı.",
-    images: 1
+    meta: "Interaction Design · Puzzle Game Engine · Multiplayer Online",
+    desc: "Klasik XOX'u yeniden yorumlayan strateji oyunu: dock sistemi mekaniği, dinamik sıra takibi ve özel desen eşleştirme algoritmaları. Online matchmaking, arkadaşla oynama, global chat, başarı sistemi ve liderlik tablosuyla tam donanımlı multiplayer deneyim.",
+    images: 17
   },
 
   "plathue": {
@@ -172,12 +172,21 @@ const PROJECTS = {
     images: 1
   },
 
+  "windy-wand": {
+    section: "Software & Interaction",
+    category: "Yarışma Birincisi · Dijital Oyun",
+    title: "Windy Wand — 1. Ödül",
+    meta: "2019 Mersin Technoscope \"Fikrinle Yürü Fikrinle Büyü\" Dijital Oyun Yarışması · Birincilik",
+    desc: "2019 Mersin Technoscope 'Fikrinle Yürü Fikrinle Büyü' Dijital Oyun Yarışması'nda birincilik kazanan oyun projesi. Rüzgar temalı mekanikler ve etkileşim tasarımıyla geliştirilen özgün oyun konsepti.",
+    images: 0
+  },
+
   "hackathon": {
     section: "Software & Interaction",
-    category: "Ödüllü Oyun Projeleri",
-    title: "Memory Looper & Windy Wand",
-    meta: "İTÜ GameTech Hackathon 2.liği · Mersin Technoscope 1.liği",
-    desc: "İki ödüllü oyun projesi: Windy Wand — 2019 \"Fikrinle Yürü Fikrinle Büyü\" Dijital Oyun Yarışması (Mersin Technoscope) birinciliği; Memory Looper — 2022 İTÜ GameTech Hackathon (GoodJob Games) ikinciliği kazanan hafıza döngüsü temalı oyun tasarımı.",
+    category: "Hackathon İkincisi · Oyun",
+    title: "Memory Looper",
+    meta: "İTÜ GameTech Hackathon (GoodJob Games) · 2022 · İkincilik",
+    desc: "2022 İTÜ GameTech Hackathon'da (GoodJob Games sponsorluğunda) ikincilik kazanan hafıza döngüsü temalı oyun tasarımı. Zaman döngüsü mekaniği ve hafıza bulmacaları üzerine kurulu özgün oyun konsepti.",
     images: 0
   }
 };
@@ -186,5 +195,5 @@ const PROJECTS = {
 const PROJECT_ORDER = [
   "momora","yacht","funky-daft","urban-nexus","multimate","catia-chess",
   "smart-faucet","halo-studio","firetape","marble-stand","ozlem-kristal","water-gun","hivennel",
-  "hull-plugin","beyin-finance","taskisla","xox","plathue","hackathon"
+  "hull-plugin","beyin-finance","taskisla","xox","plathue","windy-wand","hackathon"
 ];
