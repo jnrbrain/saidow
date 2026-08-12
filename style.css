@@ -1308,6 +1308,25 @@ body {
   color: var(--color-atomic-orange);
 }
 
+.exp-project-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-atomic-orange);
+  text-decoration: none;
+  padding: 6px 16px;
+  border: 1.5px solid var(--color-atomic-orange);
+  border-radius: 20px;
+  transition: var(--transition-smooth);
+}
+
+.exp-project-link:hover {
+  background: var(--color-atomic-orange);
+  color: #FFFFFF;
+  transform: translateX(4px);
+}
+
 @media (max-width: 640px) {
   .exp-timeline {
     padding-left: 24px;
