@@ -2,27 +2,28 @@ const TRANSLATIONS = {
   tr: {
     // Navigation
     nav_explore: "Keşfet",
-    nav_design: "Design",
-    nav_code: "Code",
+    nav_design: "Tasarım",
+    nav_code: "Yazılım",
     nav_experience: "Deneyim",
     nav_about: "Hakkımda",
     nav_contact: "İletişim",
 
     // Hero / Hub
+    hero_title: "Tasarım & Yazılım",
     hero_subtitle: "Endüstriyel Tasarım disiplini ile Yazılım geliştirme gücünün buluştuğu dijital alanım.",
     hero_stat_projects: "Proje",
     hero_stat_awards: "Yarışma Ödülü",
-    hub_design_badge: "INDUSTRIAL DESIGN",
-    hub_design_title: "DESIGN",
+    hub_design_badge: "ENDÜSTRİYEL TASARIM",
+    hub_design_title: "TASARIM",
     hub_design_desc: "Yat Tasarımı, Medikal Ürün Kiti, Parametrik Modelleme, DFM, Akıllı Armatür & Kent Mobilyaları",
     hub_design_cta: "Tasarım Projelerini İncele",
-    hub_code_badge: "SOFTWARE & INTERACTION",
-    hub_code_title: "CODE",
+    hub_code_badge: "YAZILIM & ETKİLEŞİM",
+    hub_code_title: "YAZILIM",
     hub_code_desc: "Rhino CAD Eklenti Geliştirme, Algoritmik FinTech (Beyin Finance), Oyun Sistemleri & UI/UX",
     hub_code_cta: "Yazılım Projelerini İncele",
 
     // Design Section
-    design_tag: "01 / INDUSTRIAL DESIGN",
+    design_tag: "01 / ENDÜSTRİYEL TASARIM",
     design_title: "Endüstriyel Ürün Tasarımlarım",
     design_desc: "İstanbul Teknik Üniversitesi (İTÜ) akademik projeleri ve endüstriyel staj süreçlerinde geliştirilen tüm ürün tasarımları.",
     filter_all: "Tümü",
@@ -66,7 +67,7 @@ const TRANSLATIONS = {
     p_hivennel_desc: "Modüler altıgen ahşap evcil hayvan kulübesi ve çift kollu ledli masif ahşap masa lambası prototip çalışmaları.",
 
     // Code Section
-    code_tag: "02 / SOFTWARE & INTERACTION",
+    code_tag: "02 / YAZILIM & ETKİLEŞİM",
     code_title: "Yazılım & İnteraktif Projeler",
     code_desc: "CAD eklenti geliştirme, AWS tabanlı backend mimarisi, algoritmik FinTech sistemleri ve dijital oyunlar.",
     filter_cad: "CAD & Araçlar",
@@ -75,15 +76,15 @@ const TRANSLATIONS = {
 
     p_hull_cat: "Rhino CAD Eklentisi",
     p_hull_desc: "Rhinoceros 3D için Python ile geliştirdiğim, gemi/yat gövdelerini otomatik parametrik oluşturan ve anlık hidrostatik rapor üreten yazılım eklentisi.",
-    p_beyin_cat: "FinTech Girişimi & AWS Backend",
-    p_beyin_title: "Beyin Finance — Algoritmik Trading Platformu",
-    p_beyin_desc: "İTÜ Çekirdek kabulü almış FinTech girişimimiz için AWS tabanlı sunucu backend geliştirilmesi, veri görselleştirmesi ve ticaret otomasyon araçları.",
-    p_taskisla_cat: "Multiplayer Oyun & Arayüz",
-    p_taskisla_desc: "İTÜ Taşkışla kampüsü konseptli izometrik multiplayer oyun tasarımı, arayüz mimarisi ve Sezon Kartı (Season Pass) UI/UX seti.",
+    p_beyin_cat: "FinTech Girişimi & AWS Altyapısı",
+    p_beyin_title: "Beyin Finance — Algoritmik Ticaret Platformu",
+    p_beyin_desc: "İTÜ Çekirdek kabulü almış FinTech girişimimiz için AWS tabanlı sunucu altyapısı geliştirilmesi, veri görselleştirmesi ve ticaret otomasyon araçları.",
+    p_taskisla_cat: "Çok Oyunculu Oyun & Arayüz",
+    p_taskisla_desc: "İTÜ Taşkışla kampüsü konseptli izometrik çok oyunculu oyun tasarımı, arayüz mimarisi ve Sezon Kartı UI/UX seti.",
     p_xox_cat: "Oyun Mekaniği & Algoritma",
-    p_xox_desc: "Online multiplayer, arkadaşla oynama, liderlik tablosu ve başarı sistemiyle donatılmış strateji oyunu.",
+    p_xox_desc: "Çevrimiçi çok oyunculu, arkadaşla oynama, liderlik tablosu ve başarı sistemiyle donatılmış strateji oyunu.",
     p_plathue_cat: "Mobil Oyun Tasarımı",
-    p_plathue_title: "PlatHue — Color Platformer",
+    p_plathue_title: "PlatHue — Renk Platformer",
     p_plathue_desc: "Dinamik renk değiştirme mekanikleri, lav engelleri ve refleks bazlı platformer oyun sistemleri.",
     p_windy_cat: "Yarışma Birincisi · Dijital Oyun",
     p_windy_title: "Windy Wand — 1. Ödül",
@@ -94,7 +95,7 @@ const TRANSLATIONS = {
     p_hackathon_badge: "2.lik Ödülü",
 
     // Experience Section
-    exp_tag: "03 / PROFESSIONAL EXPERIENCE",
+    exp_tag: "03 / MESLEKİ DENEYİM",
     exp_title: "Profesyonel Deneyim",
     exp_desc: "Endüstriyel tasarım, girişimcilik ve uluslararası proje yönetimi deneyimlerim.",
     exp_intern_badge: "Staj",
@@ -102,7 +103,7 @@ const TRANSLATIONS = {
     exp_active_badge: "Aktif",
     exp_link: "Staj Projelerini İncele →",
 
-    exp_deniz_title: "Industrial Design Intern",
+    exp_deniz_title: "Endüstriyel Tasarım Stajyeri",
     exp_deniz_company: "Deniz Cam Dekorasyon San. ve Tic. Ltd.Şti.",
     exp_deniz_date: "Tem 2026 – Devam Ediyor",
     exp_deniz_loc: "Kâğıthane, İstanbul",
@@ -112,13 +113,13 @@ const TRANSLATIONS = {
     exp_ozlem_date: "Haz 2025 – Ağu 2025 · 3 ay",
     exp_ozlem_loc: "İstanbul, Türkiye",
 
-    exp_erasmus_title: "New Entrepreneur — Project Management",
-    exp_erasmus_company: "Asociatia CPDIS · Erasmus for Young Entrepreneurs",
+    exp_erasmus_title: "Yeni Girişimci — Proje Yönetimi",
+    exp_erasmus_company: "Asociatia CPDIS · Genç Girişimciler İçin Erasmus",
     exp_erasmus_date: "Tem 2024 – Eyl 2024 · 3 ay",
     exp_erasmus_loc: "Bükreş, Romanya",
     exp_erasmus_desc: "Erasmus for Young Entrepreneurs programı kapsamında sosyal medya yönetimi, veritabanı ve proje yönetimi üzerine çalışıldı. HE: Adriana Bebelea, IO: İstanbul Sanayi Odası.",
 
-    exp_beyin_title: "Ekip Lideri & Interaction Designer",
+    exp_beyin_title: "Ekip Lideri & Etkileşim Tasarımcısı",
     exp_beyin_company: "Beyin Finance · İTÜ Çekirdek Ön Kuluçka",
     exp_beyin_date: "Şub 2022 – Devam Ediyor",
     exp_beyin_loc: "İstanbul, Türkiye",
@@ -136,7 +137,7 @@ const TRANSLATIONS = {
     award_5: "★ 2026 LimonCloud Finansal AI Proje Ortaklığı",
 
     // Contact Section
-    contact_tag: "04 / CONTACT & PROFILES",
+    contact_tag: "04 / İLETİŞİM & PROFİLLER",
     contact_title: "İletişime Geçin",
     contact_desc: "Yeni bir proje, iş birliği veya fikir alışverişi için doğrudan ulaşabilirsiniz.",
     contact_personal: "Kişisel E-Posta",
@@ -161,6 +162,7 @@ const TRANSLATIONS = {
     nav_contact: "Contact",
 
     // Hero / Hub
+    hero_title: "Design & Code",
     hero_subtitle: "My digital space where Industrial Design discipline meets Software Development power.",
     hero_stat_projects: "Projects",
     hero_stat_awards: "Awards",

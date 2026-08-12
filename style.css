@@ -174,11 +174,7 @@ body {
 .lang-switch {
   display: flex;
   align-items: center;
-  gap: 4px;
-  background: rgba(29, 28, 26, 0.05);
-  padding: 4px 10px;
-  border-radius: 20px;
-  border: 1px solid var(--border-color);
+  gap: 2px;
 }
 
 .lang-btn {
@@ -189,24 +185,27 @@ body {
   font-weight: 700;
   color: var(--color-text-sub);
   cursor: pointer;
-  padding: 2px 4px;
-  border-radius: 4px;
+  padding: 4px 8px;
+  border-radius: 6px;
   transition: var(--transition-smooth);
+  opacity: 0.5;
 }
 
 .lang-btn:hover {
+  opacity: 0.8;
   color: var(--color-atomic-orange);
 }
 
 .lang-btn.active {
   color: var(--color-atomic-orange);
-  background: rgba(233, 99, 26, 0.12);
+  opacity: 1;
 }
 
 .lang-divider {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--border-color);
   user-select: none;
+  opacity: 0.6;
 }
 
 /* Hero Section */
@@ -378,6 +377,7 @@ body {
   }
 }
 
+@media (max-width: 640px) {
   .hero-section {
     padding: 110px 5% 40px;
   }
