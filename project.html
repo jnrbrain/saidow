@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proje | Said Uludağ</title>
+  <meta name="description" content="Said Uludağ - Endüstriyel tasarım ve yazılım proje detayları.">
+  <meta name="author" content="Said Uludağ">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css?v=17.0">
+</head>
+<body>
+  <div class="bg-grid"></div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <a href="index.html" class="brand-logo">
+      <span class="brand-name">SAİD ULUDAĞ</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#hub" class="nav-link">Keşfet</a>
+      <a href="index.html#design" class="nav-link">Design</a>
+      <a href="index.html#code" class="nav-link">Code</a>
+      <a href="index.html#about" class="nav-link">Hakkımda</a>
+      <a href="index.html#contact" class="nav-link btn-contact">İletişim</a>
+    </nav>
+  </header>
+
+  <!-- Project Detail -->
+  <main id="project-page" class="section-container project-container">
+    <a id="back-link" href="index.html#design" class="project-back">← Tüm Projeler</a>
+
+    <div class="project-header">
+      <span id="project-category" class="section-tag"></span>
+      <h1 id="project-title" class="section-title"></h1>
+      <p id="project-meta" class="project-meta"></p>
+      <p id="project-desc" class="project-desc"></p>
+      <div id="project-actions"></div>
+    </div>
+
+    <div id="project-gallery" class="project-gallery"></div>
+
+    <div class="project-nav">
+      <a id="prev-project" class="project-nav-link" href="#"></a>
+      <a id="next-project" class="project-nav-link next" href="#"></a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Said Uludağ. Tüm hakları saklıdır. — <a href="https://saidow.com">saidow.com</a></p>
+  </footer>
+
+  <script src="projects.js?v=1.0"></script>
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get('id');
+      const p = PROJECTS[id];
+
+      if (!p) {
+        window.location.replace('index.html');
+        return;
+      }
+
+      document.title = p.title + ' | Said Uludağ';
+      document.getElementById('project-category').textContent = p.section + ' — ' + p.category;
+      document.getElementById('project-title').textContent = p.title;
+      document.getElementById('project-meta').textContent = p.meta;
+      document.getElementById('project-desc').textContent = p.desc;
+
+      const isDesign = p.section === 'Industrial Design';
+      document.getElementById('back-link').href = 'index.html#' + (isDesign ? 'design' : 'code');
+
+      if (p.link) {
+        const a = document.createElement('a');
+        a.href = p.link;
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        a.className = 'project-external';
+        a.textContent = 'Projeyi Ziyaret Et ↗';
+        document.getElementById('project-actions').appendChild(a);
+      }
+
+      // Gallery: hero + detail images
+      const gallery = document.getElementById('project-gallery');
+      const files = ['hero'];
+      for (let i = 1; i <= p.images; i++) files.push(String(i).padStart(2, '0'));
+      files.forEach(function (f) {
+        const img = document.createElement('img');
+        img.src = 'assets/img/' + id + '/' + f + '.jpg';
+        img.alt = p.title;
+        img.loading = 'lazy';
+        img.className = 'reveal';
+        img.onerror = function () { img.remove(); };
+        gallery.appendChild(img);
+      });
+
+      // Prev / Next navigation
+      const idx = PROJECT_ORDER.indexOf(id);
+      const prev = PROJECT_ORDER[(idx - 1 + PROJECT_ORDER.length) % PROJECT_ORDER.length];
+      const next = PROJECT_ORDER[(idx + 1) % PROJECT_ORDER.length];
+      const prevEl = document.getElementById('prev-project');
+      const nextEl = document.getElementById('next-project');
+      prevEl.href = 'project.html?id=' + prev;
+      prevEl.textContent = '← ' + PROJECTS[prev].title;
+      nextEl.href = 'project.html?id=' + next;
+      nextEl.textContent = PROJECTS[next].title + ' →';
+    })();
+  </script>
+  <script src="main.js?v=13.0"></script>
+</body>
+</html>

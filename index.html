@@ -20,7 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css?v=15.0">
+  <link rel="stylesheet" href="style.css?v=17.0">
 </head>
 <body>
   <!-- Subtle Grid Background -->
@@ -30,7 +30,6 @@
   <header class="navbar">
     <a href="#" class="brand-logo">
       <span class="brand-name">SAİD ULUDAĞ</span>
-      <span class="brand-badge">İTÜ EUT</span>
     </a>
     <nav class="nav-links">
       <a href="#hub" class="nav-link active">Keşfet</a>
@@ -46,6 +45,25 @@
     <div class="hero-header">
       <h1 class="hero-title">Design & Code</h1>
       <p class="hero-subtitle">Endüstriyel Tasarım disiplini ile Yazılım geliştirme gücünün buluştuğu dijital alanım.</p>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-value" data-count="18">0</span>
+          <span class="hero-stat-label">Proje</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value" data-count="25000" data-prefix="$">$0</span>
+          <span class="hero-stat-label">AWS Hibe Desteği</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value" data-count="2">0</span>
+          <span class="hero-stat-label">Yarışma Ödülü</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value" data-count="4" data-suffix="+">0</span>
+          <span class="hero-stat-label">Yıl Deneyim</span>
+        </div>
+      </div>
     </div>
 
     <!-- Dual Hub (Design & Code) -->
@@ -95,281 +113,245 @@
 
   <!-- Design Section -->
   <section id="design" class="section-container">
-    <div class="section-header">
+    <div class="section-header reveal">
       <span class="section-tag">01 / INDUSTRIAL DESIGN</span>
       <h2 class="section-title">Endüstriyel Ürün Tasarımlarım</h2>
       <p class="section-desc">İstanbul Teknik Üniversitesi (İTÜ) akademik projeleri ve endüstriyel staj süreçlerinde geliştirilen tüm ürün tasarımları.</p>
     </div>
 
-    <div class="portfolio-grid">
+    <div class="filter-bar reveal" data-target="design-grid">
+      <button data-filter="all" class="active">Tümü</button>
+      <button data-filter="urun">Ürün</button>
+      <button data-filter="mekan">Mekan & Kent</button>
+      <button data-filter="yat">Yat Tasarımı</button>
+      <button data-filter="imalat">İmalat & Staj</button>
+    </div>
+
+    <div class="portfolio-grid" id="design-grid">
       <!-- Project 1: MOMORA -->
-      <article class="portfolio-item">
+      <a class="portfolio-item reveal" data-cat="urun" href="project.html?id=momora">
         <div class="item-media">
-          <div class="placeholder-art">
-            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            <span>Graduation Project 2026</span>
-          </div>
+          <img src="assets/img/momora/hero.jpg" alt="MOMORA Maternal Care Kit ambalaj tasarımı" loading="lazy">
         </div>
         <div class="item-info">
           <span class="item-category">Mezuniyet Projesi / Medikal</span>
           <h3 class="item-title">MOMORA — Maternal Care Kit</h3>
           <p class="item-desc">Hamile anneler için kan basıncı takibi, dinamolu hava şişirme mekanizması ve modüler ısı terapisi sunan medikal bakım kiti.</p>
         </div>
-      </article>
+      </a>
 
       <!-- Project 2: Yacht Design -->
-      <article class="portfolio-item">
+      <a class="portfolio-item reveal" data-cat="yat" href="project.html?id=yacht">
         <div class="item-media">
-          <div class="placeholder-art">
-            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 20l2-8 6-3 4 3 8-8"/></svg>
-            <span>ENT 453E Yacht Design</span>
-          </div>
+          <img src="assets/img/yacht/hero.jpg" alt="12m Lobster Yacht render görselleri" loading="lazy">
         </div>
         <div class="item-info">
           <span class="item-category">Gemi & Yat Tasarımı</span>
           <h3 class="item-title">12m Lobster Yacht Design</h3>
           <p class="item-desc">12 metrelik Lobster tipi yatın hidrostatik analizi, 3D yüzey modellemesi, iç mekan tasarımı ve teknik çizimleri.</p>
         </div>
-      </article>
+      </a>
 
       <!-- Project 3: Funky Daft Speaker -->
-      <article class="portfolio-item">
+      <a class="portfolio-item reveal" data-cat="urun" href="project.html?id=funky-daft">
         <div class="item-media">
-          <div class="placeholder-art">
-            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
-            <span>Organic Sound Sculpting</span>
-          </div>
+          <img src="assets/img/funky-daft/hero.jpg" alt="Funky Daft yapısal hoparlör tasarımı" loading="lazy">
         </div>
         <div class="item-info">
           <span class="item-category">Yapısal Ürün Tasarımı</span>
           <h3 class="item-title">FUNKY DAFT — Structural Speaker</h3>
           <p class="item-desc">Daft Punk müzik altyapısının 3D ses dalga formuna dönüştürülmesiyle tasarlanmış amorf lavanta renkli akustik hoparlör.</p>
         </div>
-      </article>
+      </a>
 
       <!-- Project 4: Urban Units -->
-      <article class="portfolio-item">
+      <a class="portfolio-item reveal" data-cat="mekan" href="project.html?id=urban-nexus">
         <div class="item-media">
-          <div class="placeholder-art">
-            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
-            <span>Maçka Park Project</span>
-          </div>
+          <img src="assets/img/urban-nexus/hero.jpg" alt="Maçka Urban Nexus kent mobilyası konsepti" loading="lazy">
         </div>
         <div class="item-info">
           <span class="item-category">Kent Mobilyası / Studio II</span>
           <h3 class="item-title">Maçka Urban Nexus</h3>
           <p class="item-desc">Siyah çelik ve su geçirmez ahşaptan üretilen modüler yürüyüş yolu aydınlatmaları, dar masa, çeşme ve oturma elemanları ailesi.</p>
         </div>
-      </article>
+      </a>
 
       <!-- Project 5: MultiMate Tool -->
-      <article class="portfolio-item">
+      <a class="portfolio-item reveal" data-cat="urun" href="project.html?id=multimate">
         <div class="item-media">
-          <div class="placeholder-art">
-            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-            <span>Multifunctional Tool</span>
-          </div>
+          <img src="assets/img/multimate/hero.jpg" alt="MultiMate Tool ürün detayları" loading="lazy">
         </div>
         <div class="item-info">
           <span class="item-category">Mekanik Ürün Tasarımı</span>
           <h3 class="item-title">MultiMate Tool — Takı Sanatı Kiti</h3>
           <p class="item-desc">Takı tasarımcıları için özel geliştirilmiş ergonomik yan keski, çıtçıt pensesi, mezura ve iplik takma sistemi.</p>
         </div>
-      </article>
+      </a>
 
       <!-- Project 6: CATIA Chess Set -->
-      <article class="portfolio-item">
+      <a class="portfolio-item reveal" data-cat="urun" href="project.html?id=catia-chess">
         <div class="item-media">
-          <div class="placeholder-art">
-            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-            <span>CATIA V5 Parametric</span>
-          </div>
+          <img src="assets/img/catia-chess/hero.jpg" alt="Askeri temalı CATIA satranç takımı" loading="lazy">
         </div>
         <div class="item-info">
           <span class="item-category">Parametrik Solid Modelleme</span>
           <h3 class="item-title">Askeri Temalı CATIA Satranç Takımı</h3>
           <p class="item-desc">Me 262 savaş uçağı (At), füze (Fil), sığınak (Kale) ve kabartma harita tahtasından oluşan parametrik katı modelleme.</p>
         </div>
-      </article>
+      </a>
 
       <!-- Project 7: Provocative Smart Faucet -->
-      <article class="portfolio-item">
+      <a class="portfolio-item reveal" data-cat="urun" href="project.html?id=smart-faucet">
         <div class="item-media">
-          <div class="placeholder-art">
-            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            <span>EUT 367E Mechanical</span>
-          </div>
+          <img src="assets/img/smart-faucet/hero.jpg" alt="Provocative Smart Faucet akıllı armatür" loading="lazy">
         </div>
         <div class="item-info">
           <span class="item-category">Provokatif Tasarım & Mekanizma</span>
           <h3 class="item-title">Provocative Smart Faucet</h3>
           <p class="item-desc">Su tasarrufu bilincini artıran dokunmatik ekranlı, hareket sensörlü ve debi sınırlamalı akıllı armatür/çeşme tasarımı.</p>
         </div>
-      </article>
+      </a>
 
       <!-- Project 8: Halo Studio -->
-      <article class="portfolio-item">
+      <a class="portfolio-item reveal" data-cat="mekan" href="project.html?id=halo-studio">
         <div class="item-media">
-          <div class="placeholder-art">
-            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/></svg>
-            <span>Studio IV Speculative</span>
-          </div>
+          <img src="assets/img/halo-studio/hero.jpg" alt="Halo Studio spekülatif çalışma alanı" loading="lazy">
         </div>
         <div class="item-info">
           <span class="item-category">Spekülatif Çalışma Alanı</span>
           <h3 class="item-title">Halo Studio — Smarter Environment</h3>
           <p class="item-desc">Akıllı çalışma ortamları için tasarlanmış sürüklenebilir raylı koltuk, yürünebilir zemin paneli ve rollable OLED ekran ünitesi.</p>
         </div>
-      </article>
+      </a>
 
       <!-- Project 9: Marble Stand -->
-      <article class="portfolio-item">
+      <a class="portfolio-item reveal" data-cat="mekan" href="project.html?id=marble-stand">
         <div class="item-media">
-          <div class="placeholder-art">
-            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/></svg>
-            <span>EUT 355E Space Org</span>
-          </div>
+          <img src="assets/img/marble-stand/hero.jpg" alt="Turkish Stones mermer sergi standı" loading="lazy">
         </div>
         <div class="item-info">
           <span class="item-category">Mekan & Stant Tasarımı</span>
           <h3 class="item-title">Turkish Stones — Mermer Sergi Standı</h3>
           <p class="item-desc">Doğal Türk mermerlerini temsil eden mermer kuleler, interaktif deneyim alanı ve kilitli küre mermer bardak altlıkları.</p>
         </div>
-      </article>
+      </a>
 
       <!-- Project 10: Özlem Kristal -->
-      <article class="portfolio-item">
+      <a class="portfolio-item reveal" data-cat="imalat" href="project.html?id=ozlem-kristal">
         <div class="item-media">
-          <div class="placeholder-art">
-            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <span>Industrial Internship</span>
-          </div>
+          <img src="assets/img/ozlem-kristal/hero.jpg" alt="Özlem Kristal sanatsal cam objeler ve trofeler" loading="lazy">
         </div>
         <div class="item-info">
           <span class="item-category">Cam & Metal İmalatı</span>
           <h3 class="item-title">Özlem Kristal Sanatsal Cam Objeler</h3>
           <p class="item-desc">Vitro lazer cam içi işleme ile üretilen Dört Ayaklı Minare, Zerzevan Kalesi, Diyarbakır Şehir Çizgisi ve Selçuklu motifleri cam trofeleri.</p>
         </div>
-      </article>
+      </a>
 
       <!-- Project 11: Anthropometric Water Gun -->
-      <article class="portfolio-item">
+      <a class="portfolio-item reveal" data-cat="urun imalat" href="project.html?id=water-gun">
         <div class="item-media">
-          <div class="placeholder-art">
-            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-4V4h-4v6H6l6 7 6-7z"/></svg>
-            <span>EUT 272E Human Factors</span>
-          </div>
+          <img src="assets/img/water-gun/hero.jpg" alt="Ergonomik su tabancası köpük mock-up" loading="lazy">
         </div>
         <div class="item-info">
           <span class="item-category">Antropometri & Prototipleme</span>
           <h3 class="item-title">Ergonomik Su Tabancası Oyuncak</h3>
           <p class="item-desc">Çocuk ve yetişkin el ölçülerine uygun antropometrik analizler, strafor köpük carving mock-up'lar ve fiziki oyuncak modeli.</p>
         </div>
-      </article>
+      </a>
 
       <!-- Project 12: Hivennel & Lighting -->
-      <article class="portfolio-item">
+      <a class="portfolio-item reveal" data-cat="imalat" href="project.html?id=hivennel">
         <div class="item-media">
-          <div class="placeholder-art">
-            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-            <span>HandCraft & Assembly</span>
-          </div>
+          <img src="assets/img/hivennel/hero.jpg" alt="Hivennel modüler ahşap köpek kulübesi" loading="lazy">
         </div>
         <div class="item-info">
           <span class="item-category">İmalat & Ahşap Tasarımı</span>
           <h3 class="item-title">Hivennel Kulübe & Ahşap Masa Lambası</h3>
           <p class="item-desc">Modüler altıgen ahşap evcil hayvan kulübesi ve çift kollu ledli masif ahşap masa lambası prototip çalışmaları.</p>
         </div>
-      </article>
+      </a>
     </div>
   </section>
 
   <!-- Code Section -->
   <section id="code" class="section-container">
-    <div class="section-header">
+    <div class="section-header reveal">
       <span class="section-tag">02 / SOFTWARE & INTERACTION</span>
       <h2 class="section-title">Yazılım & İnteraktif Projeler</h2>
       <p class="section-desc">CAD eklenti geliştirme, AWS tabanlı backend mimarisi, algoritmik FinTech sistemleri ve dijital oyunlar.</p>
     </div>
 
-    <div class="portfolio-grid">
+    <div class="filter-bar reveal" data-target="code-grid">
+      <button data-filter="all" class="active">Tümü</button>
+      <button data-filter="cad">CAD & Araçlar</button>
+      <button data-filter="fintech">FinTech</button>
+      <button data-filter="oyun">Oyun</button>
+    </div>
+
+    <div class="portfolio-grid" id="code-grid">
       <!-- Code 1: Rhino Hull Generator Plugin -->
-      <article class="portfolio-item">
+      <a class="portfolio-item reveal" data-cat="cad" href="project.html?id=hull-plugin">
         <div class="item-media">
-          <div class="placeholder-art">
-            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            <span>Python & CAD Scripting</span>
-          </div>
+          <img src="assets/img/hull-plugin/hero.jpg" alt="Unified Yacht Hull Generator Rhino eklentisi" loading="lazy">
         </div>
         <div class="item-info">
           <span class="item-category">Rhino CAD Eklentisi</span>
           <h3 class="item-title">Unified Yacht Hull Generator Plugin</h3>
           <p class="item-desc">Rhinoceros 3D için Python ile geliştirdiğim, gemi/yat gövdelerini otomatik parametrik oluşturan ve anlık hidrostatik rapor üreten yazılım eklentisi.</p>
         </div>
-      </article>
+      </a>
 
       <!-- Code 2: Beyin Finance -->
-      <article class="portfolio-item">
+      <a class="portfolio-item reveal" data-cat="fintech" href="project.html?id=beyin-finance">
         <div class="item-media">
-          <div class="placeholder-art">
-            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
-            <span>İTÜ Çekirdek & AWS Startups</span>
-          </div>
+          <img src="assets/img/beyin-finance/hero.jpg" alt="Beyin Finance ekibi İTÜ Çekirdek" loading="lazy">
         </div>
         <div class="item-info">
           <span class="item-category">FinTech Girişimi & AWS Backend</span>
           <h3 class="item-title">Beyin Finance — Algoritmik Trading Platformu</h3>
           <p class="item-desc">İTÜ Çekirdek kabulü almış FinTech girişimimiz için AWS tabanlı sunucu backend geliştirilmesi, veri görselleştirmesi ve ticaret otomasyon araçları.</p>
         </div>
-      </article>
+      </a>
 
       <!-- Code 3: Taşkışla Online -->
-      <article class="portfolio-item">
+      <a class="portfolio-item reveal" data-cat="oyun" href="project.html?id=taskisla">
         <div class="item-media">
-          <div class="placeholder-art">
-            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-            <span>Multiplayer Game UI/UX</span>
-          </div>
+          <img src="assets/img/taskisla/hero.jpg" alt="Taşkışla Online oyun arayüzü" loading="lazy">
         </div>
         <div class="item-info">
           <span class="item-category">Multiplayer Oyun & Arayüz</span>
           <h3 class="item-title">Taşkışla Online</h3>
           <p class="item-desc">İTÜ Taşkışla kampüsü konseptli izometrik multiplayer oyun tasarımı, arayüz mimarisi ve Sezon Kartı (Season Pass) UI/UX seti.</p>
         </div>
-      </article>
+      </a>
 
       <!-- Code 4: XOX 2.0 -->
-      <article class="portfolio-item">
+      <a class="portfolio-item reveal" data-cat="oyun" href="project.html?id=xox">
         <div class="item-media">
-          <div class="placeholder-art">
-            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>
-            <span>Puzzle Game Engine</span>
-          </div>
+          <img src="assets/img/xox/hero.jpg" alt="XOX 2.0 Tap to Match oyun mekaniği" loading="lazy">
         </div>
         <div class="item-info">
           <span class="item-category">Oyun Mekaniği & Algoritma</span>
           <h3 class="item-title">XOX 2.0 — Tap to Match</h3>
           <p class="item-desc">Dock sistemi mekaniği, dinamik sıra takibi ve özel desen eşleştirme algoritmalarıyla geliştirilmiş strateji oyunu.</p>
         </div>
-      </article>
+      </a>
 
       <!-- Code 5: PlatHue -->
-      <article class="portfolio-item">
+      <a class="portfolio-item reveal" data-cat="oyun" href="project.html?id=plathue">
         <div class="item-media">
-          <div class="placeholder-art">
-            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 17l5-5 5 5"/></svg>
-            <span>2D Action Platformer</span>
-          </div>
+          <img src="assets/img/plathue/hero.jpg" alt="PlatHue renk platformer oyunu" loading="lazy">
         </div>
         <div class="item-info">
           <span class="item-category">Mobil Oyun Tasarımı</span>
           <h3 class="item-title">PlatHue — Color Platformer</h3>
           <p class="item-desc">Dinamik renk değiştirme mekanikleri, lav engelleri ve refleks bazlı platformer oyun sistemleri.</p>
         </div>
-      </article>
+      </a>
 
       <!-- Code 6: Hackathon Games -->
-      <article class="portfolio-item">
+      <a class="portfolio-item reveal" data-cat="oyun" href="project.html?id=hackathon">
         <div class="item-media">
           <div class="placeholder-art">
             <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
@@ -381,13 +363,13 @@
           <h3 class="item-title">Memory Looper & Windy Wand</h3>
           <p class="item-desc">Mersin Technoscope 1.'liği (*Windy Wand*) ve İTÜ GameTech Hackathon 2.'liği (*Memory Looper*) kazanan oyun tasarımları.</p>
         </div>
-      </article>
+      </a>
     </div>
   </section>
 
   <!-- About Section -->
   <section id="about" class="section-container about-section">
-    <div class="about-card">
+    <div class="about-card reveal">
       <div class="about-text">
         <span class="section-tag">HAKKIMDA</span>
         <h2>M. Said Uludağ</h2>
@@ -424,7 +406,7 @@
 
   <!-- Contact Section -->
   <section id="contact" class="section-container contact-section">
-    <div class="section-header">
+    <div class="section-header reveal">
       <span class="section-tag">03 / CONTACT & PROFILES</span>
       <h2 class="section-title">İletişime Geçin</h2>
       <p class="section-desc">Yeni bir proje, iş birliği veya fikir alışverişi için doğrudan ulaşabilirsiniz.</p>
@@ -432,7 +414,7 @@
 
     <div class="contact-grid">
       <!-- Personal Email -->
-      <a href="mailto:m.saiduludag@gmail.com" class="contact-card">
+      <a href="mailto:m.saiduludag@gmail.com" class="contact-card reveal">
         <div class="contact-card-header">
           <div class="contact-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -446,7 +428,7 @@
       </a>
 
       <!-- Corporate Email -->
-      <a href="mailto:said@beyinfinance.com" class="contact-card">
+      <a href="mailto:said@beyinfinance.com" class="contact-card reveal">
         <div class="contact-card-header">
           <div class="contact-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -460,7 +442,7 @@
       </a>
 
       <!-- Phone & WhatsApp -->
-      <a href="https://wa.me/905511218840" target="_blank" rel="noopener noreferrer" class="contact-card whatsapp-card">
+      <a href="https://wa.me/905511218840" target="_blank" rel="noopener noreferrer" class="contact-card reveal whatsapp-card">
         <div class="contact-card-header">
           <div class="contact-icon whatsapp-icon">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
@@ -488,6 +470,6 @@
     <p>© 2026 Said Uludağ. Tüm hakları saklıdır. — <a href="https://saidow.com">saidow.com</a></p>
   </footer>
 
-  <script src="main.js?v=12.0"></script>
+  <script src="main.js?v=13.0"></script>
 </body>
 </html>
